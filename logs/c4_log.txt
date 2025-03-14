@@ -1,0 +1,999 @@
+2025-03-08 18:53:20,945 - INFO - Using device: cuda:1
+2025-03-08 18:53:24,301 - INFO - Loaded wanda pruned gpt-2 small
+2025-03-08 18:53:25,186 - INFO - Loaded calibration dataset: c4
+2025-03-08 18:55:11,009 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 8.351, and Test loss: 8.3457
+2025-03-08 18:56:29,827 - INFO - Before pruning pretrained SAE, Validation loss: 6.5784, and Test loss: 6.5245
+2025-03-08 18:56:29,828 - INFO - Pruning for layer: 0
+2025-03-08 18:56:29,829 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.0.hook_z
+2025-03-08 18:56:29,829 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.0.attn.hook_z-attn-sae-v1
+2025-03-08 18:57:48,111 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 2.5353
+2025-03-08 18:57:48,357 - INFO - Resetting pretrained SAE
+2025-03-08 18:59:06,292 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 3.49
+2025-03-08 18:59:06,634 - INFO - Resetting pretrained SAE
+2025-03-08 19:00:25,535 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 4.5191
+2025-03-08 19:00:25,796 - INFO - Resetting pretrained SAE
+2025-03-08 19:01:42,612 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 5.4669
+2025-03-08 19:01:42,849 - INFO - Resetting pretrained SAE
+2025-03-08 19:02:59,793 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 6.189
+2025-03-08 19:03:00,024 - INFO - Resetting pretrained SAE
+2025-03-08 19:04:18,141 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 6.5338
+2025-03-08 19:04:18,393 - INFO - Resetting pretrained SAE
+2025-03-08 19:05:36,784 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 6.7729
+2025-03-08 19:05:37,028 - INFO - Resetting pretrained SAE
+2025-03-08 19:06:55,347 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 6.8523
+2025-03-08 19:06:55,599 - INFO - Resetting pretrained SAE
+2025-03-08 19:08:14,154 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 6.8319
+2025-03-08 19:08:14,384 - INFO - Resetting pretrained SAE
+2025-03-08 19:09:31,858 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 6.813
+2025-03-08 19:09:32,303 - INFO - Resetting pretrained SAE
+2025-03-08 19:10:49,232 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 6.7935
+2025-03-08 19:10:49,463 - INFO - Resetting pretrained SAE
+2025-03-08 19:12:07,789 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 6.6918
+2025-03-08 19:12:08,050 - INFO - Resetting pretrained SAE
+2025-03-08 19:13:27,055 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 6.7037
+2025-03-08 19:13:27,296 - INFO - Resetting pretrained SAE
+2025-03-08 19:14:46,030 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 6.6641
+2025-03-08 19:14:46,278 - INFO - Resetting pretrained SAE
+2025-03-08 19:16:02,935 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 6.6678
+2025-03-08 19:16:03,174 - INFO - Resetting pretrained SAE
+2025-03-08 19:17:22,217 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 6.6614
+2025-03-08 19:17:22,455 - INFO - Resetting pretrained SAE
+2025-03-08 19:18:39,662 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 6.6541
+2025-03-08 19:18:39,893 - INFO - Resetting pretrained SAE
+2025-03-08 19:19:58,764 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 6.6751
+2025-03-08 19:19:59,000 - INFO - Resetting pretrained SAE
+2025-03-08 19:21:17,004 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 6.7019
+2025-03-08 19:21:17,248 - INFO - Resetting pretrained SAE
+2025-03-08 19:22:36,635 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 6.7119
+2025-03-08 19:22:36,865 - INFO - Resetting pretrained SAE
+2025-03-08 19:23:54,779 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 6.6907
+2025-03-08 19:23:55,015 - INFO - Resetting pretrained SAE
+2025-03-08 19:25:12,773 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 6.6761
+2025-03-08 19:25:13,027 - INFO - Resetting pretrained SAE
+2025-03-08 19:26:31,854 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 6.6537
+2025-03-08 19:26:32,121 - INFO - Resetting pretrained SAE
+2025-03-08 19:27:50,731 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 6.6389
+2025-03-08 19:27:51,018 - INFO - Resetting pretrained SAE
+2025-03-08 19:29:09,129 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 6.642
+2025-03-08 19:29:09,460 - INFO - Resetting pretrained SAE
+2025-03-08 19:30:26,195 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 6.6554
+2025-03-08 19:30:26,432 - INFO - Resetting pretrained SAE
+2025-03-08 19:31:43,177 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 6.6626
+2025-03-08 19:31:43,452 - INFO - Resetting pretrained SAE
+2025-03-08 19:33:01,716 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 6.6444
+2025-03-08 19:33:01,994 - INFO - Resetting pretrained SAE
+2025-03-08 19:34:21,004 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 6.6274
+2025-03-08 19:34:21,237 - INFO - Resetting pretrained SAE
+2025-03-08 19:35:39,656 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 6.6267
+2025-03-08 19:35:39,899 - INFO - Resetting pretrained SAE
+2025-03-08 19:36:58,070 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 6.6101
+2025-03-08 19:37:00,121 - INFO - Resetting pretrained SAE
+2025-03-08 19:38:18,996 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 6.6085
+2025-03-08 19:38:19,224 - INFO - Resetting pretrained SAE
+2025-03-08 19:39:36,377 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 6.5931
+2025-03-08 19:39:36,606 - INFO - Resetting pretrained SAE
+2025-03-08 19:40:55,086 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 6.5821
+2025-03-08 19:40:55,308 - INFO - Resetting pretrained SAE
+2025-03-08 19:42:14,502 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 6.5951
+2025-03-08 19:42:14,733 - INFO - Resetting pretrained SAE
+2025-03-08 19:43:33,828 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 6.5806
+2025-03-08 19:43:34,063 - INFO - Resetting pretrained SAE
+2025-03-08 19:44:52,755 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 6.5995
+2025-03-08 19:44:53,017 - INFO - Resetting pretrained SAE
+2025-03-08 19:46:09,914 - INFO - After pruning layer 0 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 6.5879
+2025-03-08 19:46:10,162 - INFO - Resetting pretrained SAE
+2025-03-08 19:46:10,172 - INFO - For layer 0, the best Sparse Ratio: 0.99 with validation loss: 2.5353
+2025-03-08 19:46:24,112 - INFO - After pruning pretrained SAE, Validation loss: 2.5353, and Test loss: 2.5574
+2025-03-08 19:47:46,398 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 7.1681, and Test loss: 7.0585
+2025-03-08 19:49:06,147 - INFO - Before pruning pretrained SAE, Validation loss: 3.1288, and Test loss: 2.9404
+2025-03-08 19:49:06,148 - INFO - Pruning for layer: 1
+2025-03-08 19:49:06,148 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.1.hook_z
+2025-03-08 19:49:06,148 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.1.attn.hook_z-attn-sae-v1
+2025-03-08 19:50:25,331 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 2.052
+2025-03-08 19:50:25,599 - INFO - Resetting pretrained SAE
+2025-03-08 19:51:43,675 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 2.4927
+2025-03-08 19:51:43,898 - INFO - Resetting pretrained SAE
+2025-03-08 19:53:02,733 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 2.5273
+2025-03-08 19:53:03,017 - INFO - Resetting pretrained SAE
+2025-03-08 19:54:22,223 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 2.5634
+2025-03-08 19:54:22,477 - INFO - Resetting pretrained SAE
+2025-03-08 19:55:41,224 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 2.4864
+2025-03-08 19:55:41,491 - INFO - Resetting pretrained SAE
+2025-03-08 19:56:58,876 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 2.8284
+2025-03-08 19:56:59,132 - INFO - Resetting pretrained SAE
+2025-03-08 19:58:18,593 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 2.9778
+2025-03-08 19:58:19,284 - INFO - Resetting pretrained SAE
+2025-03-08 19:59:36,710 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 3.0696
+2025-03-08 19:59:36,948 - INFO - Resetting pretrained SAE
+2025-03-08 20:00:55,752 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 3.2342
+2025-03-08 20:00:56,070 - INFO - Resetting pretrained SAE
+2025-03-08 20:02:14,156 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 3.0327
+2025-03-08 20:02:14,389 - INFO - Resetting pretrained SAE
+2025-03-08 20:03:32,193 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 3.0269
+2025-03-08 20:03:32,433 - INFO - Resetting pretrained SAE
+2025-03-08 20:04:51,436 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 2.9253
+2025-03-08 20:04:51,747 - INFO - Resetting pretrained SAE
+2025-03-08 20:06:10,049 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 3.0986
+2025-03-08 20:06:10,290 - INFO - Resetting pretrained SAE
+2025-03-08 20:07:27,805 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 2.9459
+2025-03-08 20:07:28,039 - INFO - Resetting pretrained SAE
+2025-03-08 20:08:46,866 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 2.8872
+2025-03-08 20:08:47,107 - INFO - Resetting pretrained SAE
+2025-03-08 20:10:04,684 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 2.9754
+2025-03-08 20:10:04,912 - INFO - Resetting pretrained SAE
+2025-03-08 20:11:23,377 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 2.9938
+2025-03-08 20:11:23,614 - INFO - Resetting pretrained SAE
+2025-03-08 20:12:43,537 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 3.0557
+2025-03-08 20:12:43,819 - INFO - Resetting pretrained SAE
+2025-03-08 20:14:03,984 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 3.2684
+2025-03-08 20:14:04,220 - INFO - Resetting pretrained SAE
+2025-03-08 20:15:22,160 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 3.3353
+2025-03-08 20:15:22,399 - INFO - Resetting pretrained SAE
+2025-03-08 20:16:41,633 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 3.12
+2025-03-08 20:16:41,910 - INFO - Resetting pretrained SAE
+2025-03-08 20:17:58,609 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 3.2744
+2025-03-08 20:17:58,850 - INFO - Resetting pretrained SAE
+2025-03-08 20:19:17,499 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 3.3703
+2025-03-08 20:19:17,735 - INFO - Resetting pretrained SAE
+2025-03-08 20:20:37,059 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 3.5587
+2025-03-08 20:20:37,289 - INFO - Resetting pretrained SAE
+2025-03-08 20:21:55,923 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 3.4848
+2025-03-08 20:21:56,157 - INFO - Resetting pretrained SAE
+2025-03-08 20:23:14,286 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 3.6445
+2025-03-08 20:23:14,532 - INFO - Resetting pretrained SAE
+2025-03-08 20:24:33,016 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 3.6553
+2025-03-08 20:24:33,260 - INFO - Resetting pretrained SAE
+2025-03-08 20:25:50,459 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 3.768
+2025-03-08 20:25:50,684 - INFO - Resetting pretrained SAE
+2025-03-08 20:27:09,731 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 3.7002
+2025-03-08 20:27:09,980 - INFO - Resetting pretrained SAE
+2025-03-08 20:28:29,000 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 4.0361
+2025-03-08 20:28:29,322 - INFO - Resetting pretrained SAE
+2025-03-08 20:29:49,325 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 4.0623
+2025-03-08 20:29:49,563 - INFO - Resetting pretrained SAE
+2025-03-08 20:31:07,256 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 3.9582
+2025-03-08 20:31:07,505 - INFO - Resetting pretrained SAE
+2025-03-08 20:32:25,823 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 4.0085
+2025-03-08 20:32:26,106 - INFO - Resetting pretrained SAE
+2025-03-08 20:33:43,830 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 3.882
+2025-03-08 20:33:44,077 - INFO - Resetting pretrained SAE
+2025-03-08 20:35:02,839 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 3.8293
+2025-03-08 20:35:03,179 - INFO - Resetting pretrained SAE
+2025-03-08 20:36:22,249 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 3.7532
+2025-03-08 20:36:22,474 - INFO - Resetting pretrained SAE
+2025-03-08 20:37:42,529 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 3.5299
+2025-03-08 20:37:42,759 - INFO - Resetting pretrained SAE
+2025-03-08 20:39:01,030 - INFO - After pruning layer 1 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 3.5103
+2025-03-08 20:39:01,283 - INFO - Resetting pretrained SAE
+2025-03-08 20:39:01,287 - INFO - For layer 1, the best Sparse Ratio: 0.99 with validation loss: 2.052
+2025-03-08 20:39:15,658 - INFO - After pruning pretrained SAE, Validation loss: 2.052, and Test loss: 2.062
+2025-03-08 20:40:38,108 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 2.5467, and Test loss: 2.3753
+2025-03-08 20:41:58,597 - INFO - Before pruning pretrained SAE, Validation loss: 3.8331, and Test loss: 3.7593
+2025-03-08 20:41:58,598 - INFO - Pruning for layer: 2
+2025-03-08 20:41:58,599 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.2.hook_z
+2025-03-08 20:41:58,600 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.2.attn.hook_z-attn-sae-v1
+2025-03-08 20:43:16,046 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.8048
+2025-03-08 20:43:16,292 - INFO - Resetting pretrained SAE
+2025-03-08 20:44:35,357 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.8255
+2025-03-08 20:44:35,643 - INFO - Resetting pretrained SAE
+2025-03-08 20:45:55,079 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.887
+2025-03-08 20:45:55,312 - INFO - Resetting pretrained SAE
+2025-03-08 20:47:14,058 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 2.0008
+2025-03-08 20:47:14,283 - INFO - Resetting pretrained SAE
+2025-03-08 20:48:34,407 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 2.1083
+2025-03-08 20:48:34,635 - INFO - Resetting pretrained SAE
+2025-03-08 20:49:54,302 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 2.3342
+2025-03-08 20:49:54,591 - INFO - Resetting pretrained SAE
+2025-03-08 20:51:12,423 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 2.5729
+2025-03-08 20:51:12,732 - INFO - Resetting pretrained SAE
+2025-03-08 20:52:31,971 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 2.7927
+2025-03-08 20:52:32,262 - INFO - Resetting pretrained SAE
+2025-03-08 20:53:51,493 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 2.848
+2025-03-08 20:53:51,831 - INFO - Resetting pretrained SAE
+2025-03-08 20:55:11,093 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 2.6549
+2025-03-08 20:55:11,326 - INFO - Resetting pretrained SAE
+2025-03-08 20:56:28,840 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 2.7274
+2025-03-08 20:56:29,080 - INFO - Resetting pretrained SAE
+2025-03-08 20:57:47,835 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 2.818
+2025-03-08 20:57:48,071 - INFO - Resetting pretrained SAE
+2025-03-08 20:59:04,683 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 2.938
+2025-03-08 20:59:04,919 - INFO - Resetting pretrained SAE
+2025-03-08 21:00:22,327 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 2.973
+2025-03-08 21:00:22,575 - INFO - Resetting pretrained SAE
+2025-03-08 21:01:41,653 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 3.0005
+2025-03-08 21:01:41,932 - INFO - Resetting pretrained SAE
+2025-03-08 21:02:59,125 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 3.2231
+2025-03-08 21:02:59,348 - INFO - Resetting pretrained SAE
+2025-03-08 21:04:15,668 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 3.3317
+2025-03-08 21:04:15,907 - INFO - Resetting pretrained SAE
+2025-03-08 21:05:35,008 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 3.346
+2025-03-08 21:05:35,243 - INFO - Resetting pretrained SAE
+2025-03-08 21:06:54,535 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 3.5658
+2025-03-08 21:06:54,760 - INFO - Resetting pretrained SAE
+2025-03-08 21:08:12,834 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 3.4566
+2025-03-08 21:08:13,066 - INFO - Resetting pretrained SAE
+2025-03-08 21:09:31,716 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 3.5591
+2025-03-08 21:09:31,950 - INFO - Resetting pretrained SAE
+2025-03-08 21:10:51,151 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 3.5669
+2025-03-08 21:10:51,416 - INFO - Resetting pretrained SAE
+2025-03-08 21:12:08,400 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 3.5584
+2025-03-08 21:12:08,627 - INFO - Resetting pretrained SAE
+2025-03-08 21:13:27,702 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 3.4755
+2025-03-08 21:13:27,952 - INFO - Resetting pretrained SAE
+2025-03-08 21:14:47,164 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 3.4437
+2025-03-08 21:14:47,400 - INFO - Resetting pretrained SAE
+2025-03-08 21:16:06,988 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 3.4644
+2025-03-08 21:16:07,245 - INFO - Resetting pretrained SAE
+2025-03-08 21:17:26,645 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 3.4752
+2025-03-08 21:17:26,873 - INFO - Resetting pretrained SAE
+2025-03-08 21:18:46,220 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 3.4879
+2025-03-08 21:18:46,450 - INFO - Resetting pretrained SAE
+2025-03-08 21:20:03,545 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 3.4736
+2025-03-08 21:20:03,774 - INFO - Resetting pretrained SAE
+2025-03-08 21:21:21,805 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 3.5277
+2025-03-08 21:21:22,223 - INFO - Resetting pretrained SAE
+2025-03-08 21:22:40,593 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 3.5095
+2025-03-08 21:22:40,814 - INFO - Resetting pretrained SAE
+2025-03-08 21:23:58,358 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 3.2695
+2025-03-08 21:23:58,594 - INFO - Resetting pretrained SAE
+2025-03-08 21:25:16,526 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 3.2791
+2025-03-08 21:25:16,753 - INFO - Resetting pretrained SAE
+2025-03-08 21:26:35,428 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 3.3646
+2025-03-08 21:26:36,166 - INFO - Resetting pretrained SAE
+2025-03-08 21:27:53,497 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 3.3306
+2025-03-08 21:27:53,755 - INFO - Resetting pretrained SAE
+2025-03-08 21:29:12,712 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 3.3559
+2025-03-08 21:29:12,946 - INFO - Resetting pretrained SAE
+2025-03-08 21:30:32,058 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 3.3473
+2025-03-08 21:30:32,300 - INFO - Resetting pretrained SAE
+2025-03-08 21:31:51,068 - INFO - After pruning layer 2 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 3.4089
+2025-03-08 21:31:51,331 - INFO - Resetting pretrained SAE
+2025-03-08 21:31:51,335 - INFO - For layer 2, the best Sparse Ratio: 0.99 with validation loss: 1.8048
+2025-03-08 21:32:05,052 - INFO - After pruning pretrained SAE, Validation loss: 1.8048, and Test loss: 1.8411
+2025-03-08 21:33:27,748 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 1.8432, and Test loss: 1.8836
+2025-03-08 21:34:48,636 - INFO - Before pruning pretrained SAE, Validation loss: 1.8626, and Test loss: 1.9046
+2025-03-08 21:34:48,637 - INFO - Pruning for layer: 3
+2025-03-08 21:34:48,640 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.3.hook_z
+2025-03-08 21:34:48,640 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.3.attn.hook_z-attn-sae-v1
+2025-03-08 21:36:07,563 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.7737
+2025-03-08 21:36:07,812 - INFO - Resetting pretrained SAE
+2025-03-08 21:37:25,009 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.7735
+2025-03-08 21:37:25,238 - INFO - Resetting pretrained SAE
+2025-03-08 21:38:44,327 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.7744
+2025-03-08 21:38:44,555 - INFO - Resetting pretrained SAE
+2025-03-08 21:40:02,603 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.7747
+2025-03-08 21:40:02,829 - INFO - Resetting pretrained SAE
+2025-03-08 21:41:22,180 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.7728
+2025-03-08 21:41:22,413 - INFO - Resetting pretrained SAE
+2025-03-08 21:42:42,000 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.7739
+2025-03-08 21:42:42,266 - INFO - Resetting pretrained SAE
+2025-03-08 21:44:00,986 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.7733
+2025-03-08 21:44:01,303 - INFO - Resetting pretrained SAE
+2025-03-08 21:45:18,813 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.775
+2025-03-08 21:45:19,047 - INFO - Resetting pretrained SAE
+2025-03-08 21:46:36,590 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.7728
+2025-03-08 21:46:36,811 - INFO - Resetting pretrained SAE
+2025-03-08 21:47:55,280 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.7734
+2025-03-08 21:47:55,518 - INFO - Resetting pretrained SAE
+2025-03-08 21:49:14,295 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.7856
+2025-03-08 21:49:14,555 - INFO - Resetting pretrained SAE
+2025-03-08 21:50:33,600 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.7774
+2025-03-08 21:50:33,841 - INFO - Resetting pretrained SAE
+2025-03-08 21:51:52,116 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.7748
+2025-03-08 21:51:52,342 - INFO - Resetting pretrained SAE
+2025-03-08 21:53:09,607 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.7796
+2025-03-08 21:53:09,827 - INFO - Resetting pretrained SAE
+2025-03-08 21:54:29,113 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.779
+2025-03-08 21:54:29,387 - INFO - Resetting pretrained SAE
+2025-03-08 21:55:48,980 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.7855
+2025-03-08 21:55:49,221 - INFO - Resetting pretrained SAE
+2025-03-08 21:57:08,589 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.7876
+2025-03-08 21:57:08,830 - INFO - Resetting pretrained SAE
+2025-03-08 21:58:27,840 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.7736
+2025-03-08 21:58:28,083 - INFO - Resetting pretrained SAE
+2025-03-08 21:59:45,777 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.7721
+2025-03-08 21:59:45,999 - INFO - Resetting pretrained SAE
+2025-03-08 22:01:03,009 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.7785
+2025-03-08 22:01:03,316 - INFO - Resetting pretrained SAE
+2025-03-08 22:02:22,822 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.7712
+2025-03-08 22:02:23,051 - INFO - Resetting pretrained SAE
+2025-03-08 22:03:41,149 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.7692
+2025-03-08 22:03:41,398 - INFO - Resetting pretrained SAE
+2025-03-08 22:04:59,952 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.7672
+2025-03-08 22:05:00,214 - INFO - Resetting pretrained SAE
+2025-03-08 22:06:17,130 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.7752
+2025-03-08 22:06:17,360 - INFO - Resetting pretrained SAE
+2025-03-08 22:07:33,867 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.7787
+2025-03-08 22:07:34,127 - INFO - Resetting pretrained SAE
+2025-03-08 22:08:52,117 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7986
+2025-03-08 22:08:52,498 - INFO - Resetting pretrained SAE
+2025-03-08 22:10:10,299 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.785
+2025-03-08 22:10:10,539 - INFO - Resetting pretrained SAE
+2025-03-08 22:11:28,452 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7787
+2025-03-08 22:11:28,683 - INFO - Resetting pretrained SAE
+2025-03-08 22:12:47,830 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.8159
+2025-03-08 22:12:48,077 - INFO - Resetting pretrained SAE
+2025-03-08 22:14:04,320 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.8077
+2025-03-08 22:14:04,562 - INFO - Resetting pretrained SAE
+2025-03-08 22:15:23,430 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.8169
+2025-03-08 22:15:23,665 - INFO - Resetting pretrained SAE
+2025-03-08 22:16:42,843 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.8208
+2025-03-08 22:16:43,086 - INFO - Resetting pretrained SAE
+2025-03-08 22:18:00,518 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.8235
+2025-03-08 22:18:00,750 - INFO - Resetting pretrained SAE
+2025-03-08 22:19:19,582 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.8254
+2025-03-08 22:19:19,898 - INFO - Resetting pretrained SAE
+2025-03-08 22:20:38,451 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.8233
+2025-03-08 22:20:38,686 - INFO - Resetting pretrained SAE
+2025-03-08 22:21:56,259 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.828
+2025-03-08 22:21:56,504 - INFO - Resetting pretrained SAE
+2025-03-08 22:23:14,138 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.8398
+2025-03-08 22:23:14,376 - INFO - Resetting pretrained SAE
+2025-03-08 22:24:32,677 - INFO - After pruning layer 3 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.864
+2025-03-08 22:24:32,958 - INFO - Resetting pretrained SAE
+2025-03-08 22:24:32,962 - INFO - For layer 3, the best Sparse Ratio: 0.55 with validation loss: 1.7672
+2025-03-08 22:24:47,099 - INFO - After pruning pretrained SAE, Validation loss: 1.7672, and Test loss: 1.8182
+2025-03-08 22:26:09,186 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 4.1875, and Test loss: 4.247
+2025-03-08 22:27:30,667 - INFO - Before pruning pretrained SAE, Validation loss: 1.7437, and Test loss: 1.7834
+2025-03-08 22:27:30,668 - INFO - Pruning for layer: 4
+2025-03-08 22:27:30,668 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.4.hook_z
+2025-03-08 22:27:30,668 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.4.attn.hook_z-attn-sae-v1
+2025-03-08 22:28:49,474 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.7861
+2025-03-08 22:28:49,702 - INFO - Resetting pretrained SAE
+2025-03-08 22:30:08,610 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.7855
+2025-03-08 22:30:08,882 - INFO - Resetting pretrained SAE
+2025-03-08 22:31:26,836 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.7851
+2025-03-08 22:31:27,087 - INFO - Resetting pretrained SAE
+2025-03-08 22:32:46,045 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.7843
+2025-03-08 22:32:46,334 - INFO - Resetting pretrained SAE
+2025-03-08 22:34:05,156 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.7835
+2025-03-08 22:34:05,396 - INFO - Resetting pretrained SAE
+2025-03-08 22:35:23,896 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.7823
+2025-03-08 22:35:24,126 - INFO - Resetting pretrained SAE
+2025-03-08 22:36:43,094 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.7809
+2025-03-08 22:36:43,481 - INFO - Resetting pretrained SAE
+2025-03-08 22:38:03,547 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.7795
+2025-03-08 22:38:03,779 - INFO - Resetting pretrained SAE
+2025-03-08 22:39:21,599 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.778
+2025-03-08 22:39:21,829 - INFO - Resetting pretrained SAE
+2025-03-08 22:40:39,642 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.776
+2025-03-08 22:40:39,900 - INFO - Resetting pretrained SAE
+2025-03-08 22:41:58,810 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.7747
+2025-03-08 22:41:59,126 - INFO - Resetting pretrained SAE
+2025-03-08 22:43:18,482 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.7735
+2025-03-08 22:43:18,714 - INFO - Resetting pretrained SAE
+2025-03-08 22:44:38,783 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.7723
+2025-03-08 22:44:39,005 - INFO - Resetting pretrained SAE
+2025-03-08 22:45:57,561 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.7711
+2025-03-08 22:45:57,863 - INFO - Resetting pretrained SAE
+2025-03-08 22:47:16,960 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.7704
+2025-03-08 22:47:17,187 - INFO - Resetting pretrained SAE
+2025-03-08 22:48:35,202 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.7688
+2025-03-08 22:48:35,446 - INFO - Resetting pretrained SAE
+2025-03-08 22:49:54,926 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.7679
+2025-03-08 22:49:55,154 - INFO - Resetting pretrained SAE
+2025-03-08 22:51:15,408 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.7675
+2025-03-08 22:51:15,631 - INFO - Resetting pretrained SAE
+2025-03-08 22:52:35,747 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.7664
+2025-03-08 22:52:36,031 - INFO - Resetting pretrained SAE
+2025-03-08 22:53:54,763 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.7649
+2025-03-08 22:53:54,986 - INFO - Resetting pretrained SAE
+2025-03-08 22:55:13,735 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.7642
+2025-03-08 22:55:13,988 - INFO - Resetting pretrained SAE
+2025-03-08 22:56:31,741 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.7635
+2025-03-08 22:56:32,002 - INFO - Resetting pretrained SAE
+2025-03-08 22:57:51,736 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.762
+2025-03-08 22:57:51,995 - INFO - Resetting pretrained SAE
+2025-03-08 22:59:10,274 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.7618
+2025-03-08 22:59:10,503 - INFO - Resetting pretrained SAE
+2025-03-08 23:00:29,025 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.7605
+2025-03-08 23:00:29,313 - INFO - Resetting pretrained SAE
+2025-03-08 23:01:48,942 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7598
+2025-03-08 23:01:49,216 - INFO - Resetting pretrained SAE
+2025-03-08 23:03:08,884 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7589
+2025-03-08 23:03:09,128 - INFO - Resetting pretrained SAE
+2025-03-08 23:04:26,583 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.758
+2025-03-08 23:04:26,820 - INFO - Resetting pretrained SAE
+2025-03-08 23:05:44,393 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.7578
+2025-03-08 23:05:44,637 - INFO - Resetting pretrained SAE
+2025-03-08 23:07:02,528 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7567
+2025-03-08 23:07:02,754 - INFO - Resetting pretrained SAE
+2025-03-08 23:08:22,161 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7555
+2025-03-08 23:08:22,419 - INFO - Resetting pretrained SAE
+2025-03-08 23:09:40,128 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.7536
+2025-03-08 23:09:40,357 - INFO - Resetting pretrained SAE
+2025-03-08 23:10:58,623 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7527
+2025-03-08 23:10:58,859 - INFO - Resetting pretrained SAE
+2025-03-08 23:12:19,061 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.7512
+2025-03-08 23:12:19,294 - INFO - Resetting pretrained SAE
+2025-03-08 23:13:38,569 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7501
+2025-03-08 23:13:38,795 - INFO - Resetting pretrained SAE
+2025-03-08 23:14:56,565 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.7492
+2025-03-08 23:14:56,824 - INFO - Resetting pretrained SAE
+2025-03-08 23:16:15,014 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7484
+2025-03-08 23:16:15,251 - INFO - Resetting pretrained SAE
+2025-03-08 23:17:31,482 - INFO - After pruning layer 4 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7476
+2025-03-08 23:17:31,761 - INFO - Resetting pretrained SAE
+2025-03-08 23:17:31,765 - INFO - For layer 4, the best Sparse Ratio: 0.25 with validation loss: 1.7476
+2025-03-08 23:17:47,045 - INFO - After pruning pretrained SAE, Validation loss: 1.7476, and Test loss: 1.7878
+2025-03-08 23:19:08,793 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 1.767, and Test loss: 1.8113
+2025-03-08 23:20:34,545 - INFO - Before pruning pretrained SAE, Validation loss: 1.8934, and Test loss: 1.9324
+2025-03-08 23:20:34,546 - INFO - Pruning for layer: 5
+2025-03-08 23:20:34,546 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.5.hook_z
+2025-03-08 23:20:34,546 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.5.attn.hook_z-attn-sae-v1
+2025-03-08 23:21:57,225 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.9141
+2025-03-08 23:21:57,636 - INFO - Resetting pretrained SAE
+2025-03-08 23:23:19,670 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 2.1286
+2025-03-08 23:23:20,059 - INFO - Resetting pretrained SAE
+2025-03-08 23:24:43,284 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 2.3614
+2025-03-08 23:24:43,717 - INFO - Resetting pretrained SAE
+2025-03-08 23:26:06,345 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 2.5326
+2025-03-08 23:26:06,749 - INFO - Resetting pretrained SAE
+2025-03-08 23:27:29,165 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 3.199
+2025-03-08 23:27:29,557 - INFO - Resetting pretrained SAE
+2025-03-08 23:28:52,178 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 3.2979
+2025-03-08 23:28:52,559 - INFO - Resetting pretrained SAE
+2025-03-08 23:30:15,143 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 3.8176
+2025-03-08 23:30:15,557 - INFO - Resetting pretrained SAE
+2025-03-08 23:31:36,229 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 3.3641
+2025-03-08 23:31:36,630 - INFO - Resetting pretrained SAE
+2025-03-08 23:32:58,476 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 3.9433
+2025-03-08 23:32:58,919 - INFO - Resetting pretrained SAE
+2025-03-08 23:34:20,654 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 3.4155
+2025-03-08 23:34:21,045 - INFO - Resetting pretrained SAE
+2025-03-08 23:35:43,627 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 3.2882
+2025-03-08 23:35:44,018 - INFO - Resetting pretrained SAE
+2025-03-08 23:37:06,454 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 3.9274
+2025-03-08 23:37:06,864 - INFO - Resetting pretrained SAE
+2025-03-08 23:38:29,227 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 4.0553
+2025-03-08 23:38:29,631 - INFO - Resetting pretrained SAE
+2025-03-08 23:39:51,872 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 3.4607
+2025-03-08 23:39:52,257 - INFO - Resetting pretrained SAE
+2025-03-08 23:41:15,057 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 3.5741
+2025-03-08 23:41:15,488 - INFO - Resetting pretrained SAE
+2025-03-08 23:42:37,248 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 3.7029
+2025-03-08 23:42:37,645 - INFO - Resetting pretrained SAE
+2025-03-08 23:43:59,818 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 3.5594
+2025-03-08 23:44:00,207 - INFO - Resetting pretrained SAE
+2025-03-08 23:45:22,656 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 4.8607
+2025-03-08 23:45:23,038 - INFO - Resetting pretrained SAE
+2025-03-08 23:46:45,113 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 4.0648
+2025-03-08 23:46:45,508 - INFO - Resetting pretrained SAE
+2025-03-08 23:48:07,774 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 4.3525
+2025-03-08 23:48:08,157 - INFO - Resetting pretrained SAE
+2025-03-08 23:49:29,932 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 4.413
+2025-03-08 23:49:30,326 - INFO - Resetting pretrained SAE
+2025-03-08 23:50:53,040 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 4.6868
+2025-03-08 23:50:53,439 - INFO - Resetting pretrained SAE
+2025-03-08 23:52:15,032 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 4.3737
+2025-03-08 23:52:15,839 - INFO - Resetting pretrained SAE
+2025-03-08 23:53:36,298 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 4.4416
+2025-03-08 23:53:36,714 - INFO - Resetting pretrained SAE
+2025-03-08 23:54:59,727 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 4.1623
+2025-03-08 23:55:00,119 - INFO - Resetting pretrained SAE
+2025-03-08 23:56:22,096 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 4.1168
+2025-03-08 23:56:22,552 - INFO - Resetting pretrained SAE
+2025-03-08 23:57:44,980 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 3.9999
+2025-03-08 23:57:45,399 - INFO - Resetting pretrained SAE
+2025-03-08 23:59:07,840 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 4.1383
+2025-03-08 23:59:08,218 - INFO - Resetting pretrained SAE
+2025-03-09 00:00:30,519 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 4.0971
+2025-03-09 00:00:30,909 - INFO - Resetting pretrained SAE
+2025-03-09 00:01:53,533 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 4.1275
+2025-03-09 00:01:53,916 - INFO - Resetting pretrained SAE
+2025-03-09 00:03:15,737 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 4.0733
+2025-03-09 00:03:16,210 - INFO - Resetting pretrained SAE
+2025-03-09 00:04:36,858 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 3.8252
+2025-03-09 00:04:37,244 - INFO - Resetting pretrained SAE
+2025-03-09 00:05:59,546 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 3.1206
+2025-03-09 00:05:59,938 - INFO - Resetting pretrained SAE
+2025-03-09 00:07:22,418 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 2.6575
+2025-03-09 00:07:22,803 - INFO - Resetting pretrained SAE
+2025-03-09 00:08:44,854 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 2.8898
+2025-03-09 00:08:45,249 - INFO - Resetting pretrained SAE
+2025-03-09 00:10:07,594 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 2.5146
+2025-03-09 00:10:07,982 - INFO - Resetting pretrained SAE
+2025-03-09 00:11:31,452 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 2.1562
+2025-03-09 00:11:31,834 - INFO - Resetting pretrained SAE
+2025-03-09 00:12:53,165 - INFO - After pruning layer 5 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 2.1179
+2025-03-09 00:12:53,570 - INFO - Resetting pretrained SAE
+2025-03-09 00:12:53,575 - INFO - For layer 5, the best Sparse Ratio: 0.99 with validation loss: 1.9141
+2025-03-09 00:13:08,254 - INFO - After pruning pretrained SAE, Validation loss: 1.9141, and Test loss: 1.9798
+2025-03-09 00:14:29,154 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 1.9896, and Test loss: 2.0327
+2025-03-09 00:15:50,221 - INFO - Before pruning pretrained SAE, Validation loss: 1.7624, and Test loss: 1.8062
+2025-03-09 00:15:50,221 - INFO - Pruning for layer: 6
+2025-03-09 00:15:50,221 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.6.hook_z
+2025-03-09 00:15:50,221 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.6.attn.hook_z-attn-sae-v1
+2025-03-09 00:17:07,827 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.8792
+2025-03-09 00:17:08,076 - INFO - Resetting pretrained SAE
+2025-03-09 00:18:27,953 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.892
+2025-03-09 00:18:28,194 - INFO - Resetting pretrained SAE
+2025-03-09 00:19:47,118 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.8754
+2025-03-09 00:19:47,350 - INFO - Resetting pretrained SAE
+2025-03-09 00:21:04,202 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.8738
+2025-03-09 00:21:04,427 - INFO - Resetting pretrained SAE
+2025-03-09 00:22:21,843 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.8495
+2025-03-09 00:22:22,061 - INFO - Resetting pretrained SAE
+2025-03-09 00:23:40,494 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.8605
+2025-03-09 00:23:40,723 - INFO - Resetting pretrained SAE
+2025-03-09 00:24:59,294 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.8595
+2025-03-09 00:24:59,539 - INFO - Resetting pretrained SAE
+2025-03-09 00:26:18,578 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.8307
+2025-03-09 00:26:18,800 - INFO - Resetting pretrained SAE
+2025-03-09 00:27:36,511 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.8295
+2025-03-09 00:27:36,951 - INFO - Resetting pretrained SAE
+2025-03-09 00:28:55,673 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.8312
+2025-03-09 00:28:55,904 - INFO - Resetting pretrained SAE
+2025-03-09 00:30:14,219 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.8265
+2025-03-09 00:30:14,517 - INFO - Resetting pretrained SAE
+2025-03-09 00:31:31,745 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.8263
+2025-03-09 00:31:32,018 - INFO - Resetting pretrained SAE
+2025-03-09 00:32:49,171 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.8325
+2025-03-09 00:32:49,401 - INFO - Resetting pretrained SAE
+2025-03-09 00:34:08,246 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.8268
+2025-03-09 00:34:08,476 - INFO - Resetting pretrained SAE
+2025-03-09 00:35:26,733 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.8211
+2025-03-09 00:35:26,969 - INFO - Resetting pretrained SAE
+2025-03-09 00:36:44,975 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.8294
+2025-03-09 00:36:45,229 - INFO - Resetting pretrained SAE
+2025-03-09 00:38:03,229 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.8263
+2025-03-09 00:38:03,623 - INFO - Resetting pretrained SAE
+2025-03-09 00:39:20,789 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.8284
+2025-03-09 00:39:21,014 - INFO - Resetting pretrained SAE
+2025-03-09 00:40:39,603 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.8297
+2025-03-09 00:40:39,853 - INFO - Resetting pretrained SAE
+2025-03-09 00:41:59,229 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.8277
+2025-03-09 00:41:59,826 - INFO - Resetting pretrained SAE
+2025-03-09 00:43:18,198 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.8249
+2025-03-09 00:43:18,514 - INFO - Resetting pretrained SAE
+2025-03-09 00:44:36,830 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.8192
+2025-03-09 00:44:37,097 - INFO - Resetting pretrained SAE
+2025-03-09 00:45:54,221 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.812
+2025-03-09 00:45:54,477 - INFO - Resetting pretrained SAE
+2025-03-09 00:47:11,474 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.8092
+2025-03-09 00:47:11,703 - INFO - Resetting pretrained SAE
+2025-03-09 00:48:29,339 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.8041
+2025-03-09 00:48:29,564 - INFO - Resetting pretrained SAE
+2025-03-09 00:49:46,364 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.8004
+2025-03-09 00:49:46,588 - INFO - Resetting pretrained SAE
+2025-03-09 00:51:05,040 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7877
+2025-03-09 00:51:05,353 - INFO - Resetting pretrained SAE
+2025-03-09 00:52:23,004 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7861
+2025-03-09 00:52:23,251 - INFO - Resetting pretrained SAE
+2025-03-09 00:53:42,220 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.786
+2025-03-09 00:53:42,443 - INFO - Resetting pretrained SAE
+2025-03-09 00:55:01,171 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7796
+2025-03-09 00:55:01,410 - INFO - Resetting pretrained SAE
+2025-03-09 00:56:20,334 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7782
+2025-03-09 00:56:20,657 - INFO - Resetting pretrained SAE
+2025-03-09 00:57:40,402 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.7717
+2025-03-09 00:57:40,648 - INFO - Resetting pretrained SAE
+2025-03-09 00:58:58,564 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7746
+2025-03-09 00:58:58,789 - INFO - Resetting pretrained SAE
+2025-03-09 01:00:17,984 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.7749
+2025-03-09 01:00:18,235 - INFO - Resetting pretrained SAE
+2025-03-09 01:01:36,030 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7686
+2025-03-09 01:01:36,250 - INFO - Resetting pretrained SAE
+2025-03-09 01:02:53,253 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.7627
+2025-03-09 01:02:53,589 - INFO - Resetting pretrained SAE
+2025-03-09 01:04:11,373 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7584
+2025-03-09 01:04:11,603 - INFO - Resetting pretrained SAE
+2025-03-09 01:05:28,415 - INFO - After pruning layer 6 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7582
+2025-03-09 01:05:28,637 - INFO - Resetting pretrained SAE
+2025-03-09 01:05:28,641 - INFO - For layer 6, the best Sparse Ratio: 0.25 with validation loss: 1.7582
+2025-03-09 01:05:42,695 - INFO - After pruning pretrained SAE, Validation loss: 1.7582, and Test loss: 1.7973
+2025-03-09 01:07:03,967 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 2.6344, and Test loss: 2.7229
+2025-03-09 01:08:30,055 - INFO - Before pruning pretrained SAE, Validation loss: 1.734, and Test loss: 1.7772
+2025-03-09 01:08:30,056 - INFO - Pruning for layer: 7
+2025-03-09 01:08:30,056 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.7.hook_z
+2025-03-09 01:08:30,056 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.7.attn.hook_z-attn-sae-v1
+2025-03-09 01:09:52,000 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.9619
+2025-03-09 01:09:52,379 - INFO - Resetting pretrained SAE
+2025-03-09 01:11:14,396 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 2.0673
+2025-03-09 01:11:14,771 - INFO - Resetting pretrained SAE
+2025-03-09 01:12:37,604 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 2.1766
+2025-03-09 01:12:38,009 - INFO - Resetting pretrained SAE
+2025-03-09 01:14:00,582 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 2.2557
+2025-03-09 01:14:00,996 - INFO - Resetting pretrained SAE
+2025-03-09 01:15:22,391 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 2.0797
+2025-03-09 01:15:22,778 - INFO - Resetting pretrained SAE
+2025-03-09 01:16:44,278 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 2.2631
+2025-03-09 01:16:44,709 - INFO - Resetting pretrained SAE
+2025-03-09 01:18:06,855 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 2.22
+2025-03-09 01:18:07,231 - INFO - Resetting pretrained SAE
+2025-03-09 01:19:28,041 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 2.0447
+2025-03-09 01:19:28,493 - INFO - Resetting pretrained SAE
+2025-03-09 01:20:50,323 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 2.1799
+2025-03-09 01:20:50,705 - INFO - Resetting pretrained SAE
+2025-03-09 01:22:12,320 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 2.1265
+2025-03-09 01:22:12,709 - INFO - Resetting pretrained SAE
+2025-03-09 01:23:34,981 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 2.144
+2025-03-09 01:23:35,370 - INFO - Resetting pretrained SAE
+2025-03-09 01:24:57,096 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.9779
+2025-03-09 01:24:57,481 - INFO - Resetting pretrained SAE
+2025-03-09 01:26:20,160 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 2.002
+2025-03-09 01:26:20,544 - INFO - Resetting pretrained SAE
+2025-03-09 01:27:42,824 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 2.0493
+2025-03-09 01:27:43,222 - INFO - Resetting pretrained SAE
+2025-03-09 01:29:05,413 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 2.0276
+2025-03-09 01:29:05,794 - INFO - Resetting pretrained SAE
+2025-03-09 01:30:28,578 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 2.0755
+2025-03-09 01:30:28,951 - INFO - Resetting pretrained SAE
+2025-03-09 01:31:51,891 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 2.0133
+2025-03-09 01:31:52,283 - INFO - Resetting pretrained SAE
+2025-03-09 01:33:13,823 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 2.3629
+2025-03-09 01:33:14,220 - INFO - Resetting pretrained SAE
+2025-03-09 01:34:36,722 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 2.2385
+2025-03-09 01:34:37,106 - INFO - Resetting pretrained SAE
+2025-03-09 01:36:00,091 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 2.2646
+2025-03-09 01:36:00,638 - INFO - Resetting pretrained SAE
+2025-03-09 01:37:23,065 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 2.3427
+2025-03-09 01:37:23,445 - INFO - Resetting pretrained SAE
+2025-03-09 01:38:46,589 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 2.4357
+2025-03-09 01:38:47,421 - INFO - Resetting pretrained SAE
+2025-03-09 01:40:09,079 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 2.5196
+2025-03-09 01:40:09,454 - INFO - Resetting pretrained SAE
+2025-03-09 01:41:31,044 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 2.4752
+2025-03-09 01:41:31,471 - INFO - Resetting pretrained SAE
+2025-03-09 01:42:54,161 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 2.1861
+2025-03-09 01:42:55,379 - INFO - Resetting pretrained SAE
+2025-03-09 01:44:14,736 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 2.1387
+2025-03-09 01:44:15,132 - INFO - Resetting pretrained SAE
+2025-03-09 01:45:37,359 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 2.1949
+2025-03-09 01:45:37,750 - INFO - Resetting pretrained SAE
+2025-03-09 01:47:00,270 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 2.1702
+2025-03-09 01:47:00,659 - INFO - Resetting pretrained SAE
+2025-03-09 01:48:22,961 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 2.0466
+2025-03-09 01:48:24,939 - INFO - Resetting pretrained SAE
+2025-03-09 01:49:48,197 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 2.1139
+2025-03-09 01:49:48,642 - INFO - Resetting pretrained SAE
+2025-03-09 01:51:11,251 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.9782
+2025-03-09 01:51:11,646 - INFO - Resetting pretrained SAE
+2025-03-09 01:52:34,109 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.8334
+2025-03-09 01:52:34,487 - INFO - Resetting pretrained SAE
+2025-03-09 01:53:56,599 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.8249
+2025-03-09 01:53:57,024 - INFO - Resetting pretrained SAE
+2025-03-09 01:55:18,557 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.8287
+2025-03-09 01:55:19,036 - INFO - Resetting pretrained SAE
+2025-03-09 01:56:41,889 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.8105
+2025-03-09 01:56:42,268 - INFO - Resetting pretrained SAE
+2025-03-09 01:58:05,085 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.813
+2025-03-09 01:58:05,495 - INFO - Resetting pretrained SAE
+2025-03-09 01:59:28,875 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7903
+2025-03-09 01:59:29,390 - INFO - Resetting pretrained SAE
+2025-03-09 03:00:52,575 - INFO - After pruning layer 7 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7811
+2025-03-09 03:00:52,984 - INFO - Resetting pretrained SAE
+2025-03-09 03:00:52,990 - INFO - For layer 7, the best Sparse Ratio: 0.25 with validation loss: 1.7811
+2025-03-09 03:01:07,852 - INFO - After pruning pretrained SAE, Validation loss: 1.7811, and Test loss: 1.8264
+2025-03-09 03:02:31,335 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 2.1432, and Test loss: 2.1987
+2025-03-09 03:03:52,352 - INFO - Before pruning pretrained SAE, Validation loss: 1.7054, and Test loss: 1.7461
+2025-03-09 03:03:52,352 - INFO - Pruning for layer: 8
+2025-03-09 03:03:52,352 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.8.hook_z
+2025-03-09 03:03:52,352 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.8.attn.hook_z-attn-sae-v1
+2025-03-09 03:05:10,940 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.7498
+2025-03-09 03:05:11,170 - INFO - Resetting pretrained SAE
+2025-03-09 03:06:28,954 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.7505
+2025-03-09 03:06:29,477 - INFO - Resetting pretrained SAE
+2025-03-09 03:07:46,384 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.7503
+2025-03-09 03:07:46,793 - INFO - Resetting pretrained SAE
+2025-03-09 03:09:05,283 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.7496
+2025-03-09 03:09:05,559 - INFO - Resetting pretrained SAE
+2025-03-09 03:10:23,260 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.7472
+2025-03-09 03:10:23,597 - INFO - Resetting pretrained SAE
+2025-03-09 03:11:41,867 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.7454
+2025-03-09 03:11:42,089 - INFO - Resetting pretrained SAE
+2025-03-09 03:13:01,423 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.7452
+2025-03-09 03:13:01,645 - INFO - Resetting pretrained SAE
+2025-03-09 03:14:18,453 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.7441
+2025-03-09 03:14:18,668 - INFO - Resetting pretrained SAE
+2025-03-09 03:15:37,412 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.7383
+2025-03-09 03:15:37,679 - INFO - Resetting pretrained SAE
+2025-03-09 03:16:57,107 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.7393
+2025-03-09 03:16:57,343 - INFO - Resetting pretrained SAE
+2025-03-09 03:18:15,096 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.7388
+2025-03-09 03:18:15,314 - INFO - Resetting pretrained SAE
+2025-03-09 03:19:32,887 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.7318
+2025-03-09 03:19:33,111 - INFO - Resetting pretrained SAE
+2025-03-09 03:20:52,781 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.7312
+2025-03-09 03:20:53,002 - INFO - Resetting pretrained SAE
+2025-03-09 03:22:10,407 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.7302
+2025-03-09 03:22:10,649 - INFO - Resetting pretrained SAE
+2025-03-09 03:23:27,973 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.7305
+2025-03-09 03:23:28,279 - INFO - Resetting pretrained SAE
+2025-03-09 03:24:46,424 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.7303
+2025-03-09 03:24:46,646 - INFO - Resetting pretrained SAE
+2025-03-09 03:26:05,310 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.7279
+2025-03-09 03:26:05,750 - INFO - Resetting pretrained SAE
+2025-03-09 03:27:23,240 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.7268
+2025-03-09 03:27:23,463 - INFO - Resetting pretrained SAE
+2025-03-09 03:28:42,701 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.7287
+2025-03-09 03:28:42,935 - INFO - Resetting pretrained SAE
+2025-03-09 03:30:01,716 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.7259
+2025-03-09 03:30:01,936 - INFO - Resetting pretrained SAE
+2025-03-09 03:31:19,986 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.7281
+2025-03-09 03:31:20,200 - INFO - Resetting pretrained SAE
+2025-03-09 03:32:37,451 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.7269
+2025-03-09 03:32:37,670 - INFO - Resetting pretrained SAE
+2025-03-09 03:33:54,463 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.7265
+2025-03-09 03:33:54,707 - INFO - Resetting pretrained SAE
+2025-03-09 03:35:12,349 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.725
+2025-03-09 03:35:12,575 - INFO - Resetting pretrained SAE
+2025-03-09 03:36:30,893 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.7237
+2025-03-09 03:36:31,095 - INFO - Resetting pretrained SAE
+2025-03-09 03:37:50,424 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7222
+2025-03-09 03:37:50,649 - INFO - Resetting pretrained SAE
+2025-03-09 03:39:07,888 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7225
+2025-03-09 03:39:08,115 - INFO - Resetting pretrained SAE
+2025-03-09 03:40:25,098 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7221
+2025-03-09 03:40:25,363 - INFO - Resetting pretrained SAE
+2025-03-09 03:41:44,183 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.7206
+2025-03-09 03:41:44,405 - INFO - Resetting pretrained SAE
+2025-03-09 03:43:03,524 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7181
+2025-03-09 03:43:03,767 - INFO - Resetting pretrained SAE
+2025-03-09 03:44:21,241 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7169
+2025-03-09 03:44:21,464 - INFO - Resetting pretrained SAE
+2025-03-09 03:45:39,125 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.7159
+2025-03-09 03:45:39,372 - INFO - Resetting pretrained SAE
+2025-03-09 03:46:57,505 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7145
+2025-03-09 03:46:57,728 - INFO - Resetting pretrained SAE
+2025-03-09 03:48:17,212 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.7132
+2025-03-09 03:48:17,455 - INFO - Resetting pretrained SAE
+2025-03-09 03:49:36,063 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7116
+2025-03-09 03:49:36,338 - INFO - Resetting pretrained SAE
+2025-03-09 03:50:53,702 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.7101
+2025-03-09 03:50:53,934 - INFO - Resetting pretrained SAE
+2025-03-09 03:52:10,754 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7106
+2025-03-09 03:52:11,004 - INFO - Resetting pretrained SAE
+2025-03-09 03:53:29,732 - INFO - After pruning layer 8 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7091
+2025-03-09 03:53:30,116 - INFO - Resetting pretrained SAE
+2025-03-09 03:53:30,120 - INFO - For layer 8, the best Sparse Ratio: 0.25 with validation loss: 1.7091
+2025-03-09 03:53:43,668 - INFO - After pruning pretrained SAE, Validation loss: 1.7091, and Test loss: 1.7504
+2025-03-09 03:55:05,204 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 2.5974, and Test loss: 2.6717
+2025-03-09 03:56:25,575 - INFO - Before pruning pretrained SAE, Validation loss: 1.7316, and Test loss: 1.7761
+2025-03-09 03:56:25,576 - INFO - Pruning for layer: 9
+2025-03-09 03:56:25,576 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.9.hook_z
+2025-03-09 03:56:25,576 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.9.attn.hook_z-attn-sae-v1
+2025-03-09 03:57:44,498 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.9155
+2025-03-09 03:57:44,721 - INFO - Resetting pretrained SAE
+2025-03-09 03:59:03,749 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.9158
+2025-03-09 03:59:03,977 - INFO - Resetting pretrained SAE
+2025-03-09 04:00:20,543 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.9156
+2025-03-09 04:00:20,780 - INFO - Resetting pretrained SAE
+2025-03-09 04:01:38,964 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.9126
+2025-03-09 04:01:39,230 - INFO - Resetting pretrained SAE
+2025-03-09 04:02:57,455 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.9152
+2025-03-09 04:02:57,677 - INFO - Resetting pretrained SAE
+2025-03-09 04:04:16,800 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.9255
+2025-03-09 04:04:17,048 - INFO - Resetting pretrained SAE
+2025-03-09 04:05:36,080 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.9165
+2025-03-09 04:05:36,302 - INFO - Resetting pretrained SAE
+2025-03-09 04:06:53,196 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.9133
+2025-03-09 04:06:53,441 - INFO - Resetting pretrained SAE
+2025-03-09 04:08:10,054 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.9259
+2025-03-09 04:08:10,324 - INFO - Resetting pretrained SAE
+2025-03-09 04:09:27,540 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.9102
+2025-03-09 04:09:27,756 - INFO - Resetting pretrained SAE
+2025-03-09 04:10:45,390 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.9377
+2025-03-09 04:10:45,822 - INFO - Resetting pretrained SAE
+2025-03-09 04:12:03,947 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.924
+2025-03-09 04:12:04,167 - INFO - Resetting pretrained SAE
+2025-03-09 04:13:21,110 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.9236
+2025-03-09 04:13:21,337 - INFO - Resetting pretrained SAE
+2025-03-09 04:14:39,186 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.9124
+2025-03-09 04:14:39,404 - INFO - Resetting pretrained SAE
+2025-03-09 04:15:56,647 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.9153
+2025-03-09 04:15:56,868 - INFO - Resetting pretrained SAE
+2025-03-09 04:17:15,111 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.9138
+2025-03-09 04:17:15,351 - INFO - Resetting pretrained SAE
+2025-03-09 04:18:32,815 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.9121
+2025-03-09 04:18:33,034 - INFO - Resetting pretrained SAE
+2025-03-09 04:19:49,545 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.9154
+2025-03-09 04:19:49,781 - INFO - Resetting pretrained SAE
+2025-03-09 04:21:08,666 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.9192
+2025-03-09 04:21:08,889 - INFO - Resetting pretrained SAE
+2025-03-09 04:22:28,267 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.9061
+2025-03-09 04:22:29,279 - INFO - Resetting pretrained SAE
+2025-03-09 04:23:47,070 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.9311
+2025-03-09 04:23:47,470 - INFO - Resetting pretrained SAE
+2025-03-09 04:25:04,058 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.8939
+2025-03-09 04:25:04,320 - INFO - Resetting pretrained SAE
+2025-03-09 04:26:21,590 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.8635
+2025-03-09 04:26:21,874 - INFO - Resetting pretrained SAE
+2025-03-09 04:27:40,723 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.8204
+2025-03-09 04:27:40,954 - INFO - Resetting pretrained SAE
+2025-03-09 04:28:59,286 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.811
+2025-03-09 04:28:59,516 - INFO - Resetting pretrained SAE
+2025-03-09 04:30:18,532 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7967
+2025-03-09 04:30:18,772 - INFO - Resetting pretrained SAE
+2025-03-09 04:31:37,428 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7759
+2025-03-09 04:31:37,647 - INFO - Resetting pretrained SAE
+2025-03-09 04:32:56,216 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7716
+2025-03-09 04:32:56,446 - INFO - Resetting pretrained SAE
+2025-03-09 04:34:14,963 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.7648
+2025-03-09 04:34:15,191 - INFO - Resetting pretrained SAE
+2025-03-09 04:35:34,465 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7623
+2025-03-09 04:35:34,686 - INFO - Resetting pretrained SAE
+2025-03-09 04:36:53,889 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7627
+2025-03-09 04:36:54,115 - INFO - Resetting pretrained SAE
+2025-03-09 04:38:12,932 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.7562
+2025-03-09 04:38:13,163 - INFO - Resetting pretrained SAE
+2025-03-09 04:39:30,668 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7532
+2025-03-09 04:39:30,892 - INFO - Resetting pretrained SAE
+2025-03-09 04:40:49,182 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.7522
+2025-03-09 04:40:49,411 - INFO - Resetting pretrained SAE
+2025-03-09 04:42:07,742 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7466
+2025-03-09 04:42:07,972 - INFO - Resetting pretrained SAE
+2025-03-09 04:43:27,498 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.743
+2025-03-09 04:43:27,769 - INFO - Resetting pretrained SAE
+2025-03-09 04:44:46,558 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7377
+2025-03-09 04:44:46,784 - INFO - Resetting pretrained SAE
+2025-03-09 04:46:05,634 - INFO - After pruning layer 9 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7386
+2025-03-09 04:46:05,865 - INFO - Resetting pretrained SAE
+2025-03-09 04:46:05,868 - INFO - For layer 9, the best Sparse Ratio: 0.27 with validation loss: 1.7377
+2025-03-09 04:46:19,790 - INFO - After pruning pretrained SAE, Validation loss: 1.7377, and Test loss: 1.7852
+2025-03-09 04:47:42,428 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 1.7629, and Test loss: 1.8184
+2025-03-09 04:49:02,208 - INFO - Before pruning pretrained SAE, Validation loss: 1.7162, and Test loss: 1.7586
+2025-03-09 04:49:02,208 - INFO - Pruning for layer: 10
+2025-03-09 04:49:02,208 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.10.hook_z
+2025-03-09 04:49:02,209 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.10.attn.hook_z-attn-sae-v1
+2025-03-09 04:50:20,592 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.7643
+2025-03-09 04:50:20,850 - INFO - Resetting pretrained SAE
+2025-03-09 04:51:39,096 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.7642
+2025-03-09 04:51:39,351 - INFO - Resetting pretrained SAE
+2025-03-09 04:52:57,798 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.7642
+2025-03-09 04:52:58,049 - INFO - Resetting pretrained SAE
+2025-03-09 04:54:15,978 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.7642
+2025-03-09 04:54:16,533 - INFO - Resetting pretrained SAE
+2025-03-09 04:55:36,134 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.7635
+2025-03-09 04:55:36,405 - INFO - Resetting pretrained SAE
+2025-03-09 04:56:54,468 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.7629
+2025-03-09 04:56:54,773 - INFO - Resetting pretrained SAE
+2025-03-09 04:58:12,593 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.7635
+2025-03-09 04:58:12,810 - INFO - Resetting pretrained SAE
+2025-03-09 04:59:29,759 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.7637
+2025-03-09 04:59:29,996 - INFO - Resetting pretrained SAE
+2025-03-09 05:00:49,362 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.7648
+2025-03-09 05:00:49,592 - INFO - Resetting pretrained SAE
+2025-03-09 05:02:07,836 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.7655
+2025-03-09 05:02:08,071 - INFO - Resetting pretrained SAE
+2025-03-09 05:03:26,545 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.7644
+2025-03-09 05:03:26,782 - INFO - Resetting pretrained SAE
+2025-03-09 05:04:44,093 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.7645
+2025-03-09 05:04:44,325 - INFO - Resetting pretrained SAE
+2025-03-09 05:06:02,102 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.7679
+2025-03-09 05:06:02,350 - INFO - Resetting pretrained SAE
+2025-03-09 05:07:19,414 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.7734
+2025-03-09 05:07:19,646 - INFO - Resetting pretrained SAE
+2025-03-09 05:08:38,952 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.7674
+2025-03-09 05:08:39,171 - INFO - Resetting pretrained SAE
+2025-03-09 05:09:59,484 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.7756
+2025-03-09 05:09:59,729 - INFO - Resetting pretrained SAE
+2025-03-09 05:11:19,023 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.7745
+2025-03-09 05:11:19,242 - INFO - Resetting pretrained SAE
+2025-03-09 05:12:37,490 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.7839
+2025-03-09 05:12:37,751 - INFO - Resetting pretrained SAE
+2025-03-09 05:13:56,938 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.7752
+2025-03-09 05:13:57,172 - INFO - Resetting pretrained SAE
+2025-03-09 05:15:15,467 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.7849
+2025-03-09 05:15:15,684 - INFO - Resetting pretrained SAE
+2025-03-09 05:16:35,941 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.7982
+2025-03-09 05:16:36,199 - INFO - Resetting pretrained SAE
+2025-03-09 05:17:55,594 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.7822
+2025-03-09 05:17:55,826 - INFO - Resetting pretrained SAE
+2025-03-09 05:19:14,135 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.7838
+2025-03-09 05:19:14,367 - INFO - Resetting pretrained SAE
+2025-03-09 05:20:31,161 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.7859
+2025-03-09 05:20:31,396 - INFO - Resetting pretrained SAE
+2025-03-09 05:21:49,261 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.7731
+2025-03-09 05:21:49,470 - INFO - Resetting pretrained SAE
+2025-03-09 05:23:07,666 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7728
+2025-03-09 05:23:07,892 - INFO - Resetting pretrained SAE
+2025-03-09 05:24:27,229 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7637
+2025-03-09 05:24:27,454 - INFO - Resetting pretrained SAE
+2025-03-09 05:25:45,682 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7608
+2025-03-09 05:25:45,975 - INFO - Resetting pretrained SAE
+2025-03-09 05:27:04,616 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.7599
+2025-03-09 05:27:04,861 - INFO - Resetting pretrained SAE
+2025-03-09 05:28:22,669 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7569
+2025-03-09 05:28:22,892 - INFO - Resetting pretrained SAE
+2025-03-09 05:29:40,270 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7551
+2025-03-09 05:29:40,491 - INFO - Resetting pretrained SAE
+2025-03-09 05:30:57,988 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.759
+2025-03-09 05:30:58,206 - INFO - Resetting pretrained SAE
+2025-03-09 05:32:15,098 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7591
+2025-03-09 05:32:15,329 - INFO - Resetting pretrained SAE
+2025-03-09 05:33:33,470 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.7567
+2025-03-09 05:33:33,696 - INFO - Resetting pretrained SAE
+2025-03-09 05:34:53,303 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7467
+2025-03-09 05:34:54,133 - INFO - Resetting pretrained SAE
+2025-03-09 05:36:13,585 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.7448
+2025-03-09 05:36:13,811 - INFO - Resetting pretrained SAE
+2025-03-09 05:37:32,689 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7385
+2025-03-09 05:37:32,911 - INFO - Resetting pretrained SAE
+2025-03-09 05:38:51,737 - INFO - After pruning layer 10 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7361
+2025-03-09 05:38:51,958 - INFO - Resetting pretrained SAE
+2025-03-09 05:38:51,962 - INFO - For layer 10, the best Sparse Ratio: 0.25 with validation loss: 1.7361
+2025-03-09 05:39:06,226 - INFO - After pruning pretrained SAE, Validation loss: 1.7361, and Test loss: 1.7829
+2025-03-09 05:40:29,334 - INFO - HuggingFace SAE trained on the pruned model, Validation loss: 1.6995, and Test loss: 1.7426
+2025-03-09 05:41:50,495 - INFO - Before pruning pretrained SAE, Validation loss: 1.7532, and Test loss: 1.7958
+2025-03-09 05:41:50,496 - INFO - Pruning for layer: 11
+2025-03-09 05:41:50,496 - INFO - Pretrained SAE location: gpt2-small-hook-z-kk/blocks.11.hook_z
+2025-03-09 05:41:50,496 - INFO - HuggingFace SAE location: suchitg/sae_test/blocks.11.attn.hook_z-attn-sae-v1
+2025-03-09 05:43:08,937 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.99, Validation Loss: 1.7771
+2025-03-09 05:43:09,165 - INFO - Resetting pretrained SAE
+2025-03-09 05:44:26,559 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.97, Validation Loss: 1.7725
+2025-03-09 05:44:26,779 - INFO - Resetting pretrained SAE
+2025-03-09 05:45:45,757 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.95, Validation Loss: 1.7759
+2025-03-09 05:45:45,991 - INFO - Resetting pretrained SAE
+2025-03-09 05:47:04,325 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.93, Validation Loss: 1.7787
+2025-03-09 05:47:04,595 - INFO - Resetting pretrained SAE
+2025-03-09 05:48:24,872 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.91, Validation Loss: 1.7898
+2025-03-09 05:48:25,216 - INFO - Resetting pretrained SAE
+2025-03-09 05:49:43,579 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.89, Validation Loss: 1.7771
+2025-03-09 05:49:43,797 - INFO - Resetting pretrained SAE
+2025-03-09 05:51:00,365 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.87, Validation Loss: 1.7781
+2025-03-09 05:51:00,596 - INFO - Resetting pretrained SAE
+2025-03-09 05:52:19,489 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.85, Validation Loss: 1.7832
+2025-03-09 05:52:19,711 - INFO - Resetting pretrained SAE
+2025-03-09 05:53:37,549 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.83, Validation Loss: 1.7701
+2025-03-09 05:53:37,807 - INFO - Resetting pretrained SAE
+2025-03-09 05:54:56,682 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.81, Validation Loss: 1.7661
+2025-03-09 05:54:56,911 - INFO - Resetting pretrained SAE
+2025-03-09 05:56:16,444 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.79, Validation Loss: 1.77
+2025-03-09 05:56:18,896 - INFO - Resetting pretrained SAE
+2025-03-09 05:57:37,697 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.77, Validation Loss: 1.7674
+2025-03-09 05:57:37,960 - INFO - Resetting pretrained SAE
+2025-03-09 05:58:57,703 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.75, Validation Loss: 1.7691
+2025-03-09 05:58:59,544 - INFO - Resetting pretrained SAE
+2025-03-09 06:00:17,386 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.73, Validation Loss: 1.7713
+2025-03-09 06:00:17,716 - INFO - Resetting pretrained SAE
+2025-03-09 06:01:37,095 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.71, Validation Loss: 1.7737
+2025-03-09 06:01:37,325 - INFO - Resetting pretrained SAE
+2025-03-09 06:02:55,909 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.69, Validation Loss: 1.7775
+2025-03-09 06:02:56,177 - INFO - Resetting pretrained SAE
+2025-03-09 06:04:14,673 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.67, Validation Loss: 1.7733
+2025-03-09 06:04:15,037 - INFO - Resetting pretrained SAE
+2025-03-09 06:05:34,602 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.65, Validation Loss: 1.7787
+2025-03-09 06:05:34,825 - INFO - Resetting pretrained SAE
+2025-03-09 06:06:52,707 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.63, Validation Loss: 1.7801
+2025-03-09 06:06:53,021 - INFO - Resetting pretrained SAE
+2025-03-09 06:08:10,141 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.61, Validation Loss: 1.7759
+2025-03-09 06:08:10,378 - INFO - Resetting pretrained SAE
+2025-03-09 06:09:30,083 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.59, Validation Loss: 1.7767
+2025-03-09 06:09:30,315 - INFO - Resetting pretrained SAE
+2025-03-09 06:10:48,788 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.57, Validation Loss: 1.7747
+2025-03-09 06:10:49,018 - INFO - Resetting pretrained SAE
+2025-03-09 06:12:09,368 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.55, Validation Loss: 1.7715
+2025-03-09 06:12:09,597 - INFO - Resetting pretrained SAE
+2025-03-09 06:13:29,536 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.53, Validation Loss: 1.7757
+2025-03-09 06:13:29,759 - INFO - Resetting pretrained SAE
+2025-03-09 06:14:48,533 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.51, Validation Loss: 1.7649
+2025-03-09 06:14:48,917 - INFO - Resetting pretrained SAE
+2025-03-09 06:16:05,974 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.49, Validation Loss: 1.7757
+2025-03-09 06:16:06,208 - INFO - Resetting pretrained SAE
+2025-03-09 06:17:24,798 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.47, Validation Loss: 1.7759
+2025-03-09 06:17:25,028 - INFO - Resetting pretrained SAE
+2025-03-09 06:18:42,880 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.45, Validation Loss: 1.7747
+2025-03-09 06:18:43,106 - INFO - Resetting pretrained SAE
+2025-03-09 06:20:01,431 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.43, Validation Loss: 1.7704
+2025-03-09 06:20:01,740 - INFO - Resetting pretrained SAE
+2025-03-09 06:21:21,083 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.41, Validation Loss: 1.7712
+2025-03-09 06:21:21,338 - INFO - Resetting pretrained SAE
+2025-03-09 06:22:40,697 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.39, Validation Loss: 1.7702
+2025-03-09 06:22:40,933 - INFO - Resetting pretrained SAE
+2025-03-09 06:23:59,662 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.37, Validation Loss: 1.7732
+2025-03-09 06:23:59,975 - INFO - Resetting pretrained SAE
+2025-03-09 06:25:18,306 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.35, Validation Loss: 1.7715
+2025-03-09 06:25:18,592 - INFO - Resetting pretrained SAE
+2025-03-09 06:26:36,421 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.33, Validation Loss: 1.767
+2025-03-09 06:26:36,655 - INFO - Resetting pretrained SAE
+2025-03-09 06:27:56,078 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.31, Validation Loss: 1.7639
+2025-03-09 06:27:56,365 - INFO - Resetting pretrained SAE
+2025-03-09 06:29:15,545 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.29, Validation Loss: 1.7587
+2025-03-09 06:29:15,769 - INFO - Resetting pretrained SAE
+2025-03-09 06:30:35,258 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.27, Validation Loss: 1.7613
+2025-03-09 06:30:35,483 - INFO - Resetting pretrained SAE
+2025-03-09 06:31:52,723 - INFO - After pruning layer 11 of pretrained SAE with sparse ratio: 0.25, Validation Loss: 1.7637
+2025-03-09 06:31:52,938 - INFO - Resetting pretrained SAE
+2025-03-09 06:31:52,941 - INFO - For layer 11, the best Sparse Ratio: 0.29 with validation loss: 1.7587
+2025-03-09 06:32:08,198 - INFO - After pruning pretrained SAE, Validation loss: 1.7587, and Test loss: 1.8041
