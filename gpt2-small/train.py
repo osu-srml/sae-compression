@@ -30,8 +30,10 @@ if __name__ == "__main__":
     cfg = LanguageModelSAERunnerConfig(
         #
         # Data Generating Function (Model + Training Distibuion)
-        model_name="gpt2-small",  # our model (more options here: https://neelnanda-io.github.io/TransformerLens/generated/model_properties_table.html)
-        hook_name=f"blocks.{layer}.attn.hook_z",  # A valid hook point (see more details here: https://neelnanda-io.github.io/TransformerLens/generated/demos/Main_Demo.html#Hook-Points)
+        model_name="gpt2-small",  # our model (more options here: https://neelnanda-io.github.io/TransformerLens/generated/model_properties_table.html) 
+        hook_name=f"blocks.{layer}.hook_resid_post",  # A valid hook point (see more details here: https://neelnanda-io.github.io/TransformerLens/generated/demos/Main_Demo.html#Hook-Points)
+        # hook_name=f"blocks.{layer}.hook_mlp_out",  # A valid hook point (see more details here: https://neelnanda-io.github.io/TransformerLens/generated/demos/Main_Demo.html#Hook-Points)
+        # hook_name=f"blocks.{layer}.attn.hook_z",  # A valid hook point (see more details here: https://neelnanda-io.github.io/TransformerLens/generated/demos/Main_Demo.html#Hook-Points)
         hook_layer=layer,  # Only one layer in the model.
         d_in=model.cfg.d_head * model.cfg.n_heads,
         dataset_path="apollo-research/Skylion007-openwebtext-tokenizer-gpt2",
@@ -42,15 +44,20 @@ if __name__ == "__main__":
         prepend_bos=True,
         #
         # SAE architecture
-        architecture="gated",
-        # architecture="standard",
-        expansion_factor=32,
+        # architecture="gated",
+        architecture="standard",
+        # expansion_factor=32,
+        #
+        d_sae=32768,
+        #
         b_dec_init_method="zeros",
         apply_b_dec_to_input=True,
         normalize_sae_decoder=False,
         scale_sparsity_penalty_by_decoder_norm=True,
         decoder_heuristic_init=True,
         init_encoder_as_decoder_transpose=True,
+        #
+        normalize_activations='layer_norm',
         #
         # Activations store
         n_batches_in_buffer=64,
@@ -159,5 +166,5 @@ if __name__ == "__main__":
     # hf_repo_id = "suchitg/sae_wanda"
     hf_repo_id = "suchitg/sae_test"
     # sae_id = f"{cfg.hook_name}-attn-sae-v-my_cfg"
-    sae_id = f"{cfg.hook_name}-attn-sae-v-my_cfg_gated_arch"
+    sae_id = f"{cfg.model_name}-{cfg.hook_name}-{cfg.architecture}-mycfg"
     upload_saes_to_huggingface({sae_id: sae}, hf_repo_id=hf_repo_id)
