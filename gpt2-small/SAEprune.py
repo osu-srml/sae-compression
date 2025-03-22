@@ -106,12 +106,11 @@ if __name__ == "__main__":
     # Configs
     dataset_name, device = args.dataset, f'cuda:{args.device}'
     model_name = 'gpt2-small'
-    # hook_id = "hook_z"
-    hook_ids = ["hook_resid_post", "hook_mlp_out", "hook_attn_out"] 
+    hook_ids = ["hook_resid_post", "hook_mlp_out", "hook_z"] 
     release = {
         "hook_resid_post": "gpt2-small-resid-post-v5-32k", 
         "hook_mlp_out": "gpt2-small-mlp-out-v5-32k", 
-        "hook_attn_out": "gpt2-small-attn-out-v5-32k"
+        "hook_z": "gpt2-small-hook-z-kk"
     }
 
     for hook_id in hook_ids:
