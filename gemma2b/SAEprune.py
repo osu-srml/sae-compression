@@ -22,6 +22,7 @@ def wanda(W, X_norm, sparse_ratio):
         W_clone.scatter_(dim=1, index=pruned_idx, src=t.zeros_like(pruned_idx, dtype=W.dtype))
     return W_clone
 
+
 # ----------------------- Update SAE Weights -----------------------
 def update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, sparse_ratio):
     sae.W_enc = t.nn.Parameter(wanda(original_W_enc, X_enc, sparse_ratio))
@@ -29,7 +30,10 @@ def update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_
     return sae
 
 # ----------------------- Compute Reconstruction Loss -----------------------
-def compute_reconstruction_loss(model, sae, token_batches):
+def compute_reconstruction_loss(model, sae, token_batches, device1=None, device2=None):
+    if device1 is None or device2 is None:
+        raise ValueError("Device not specified")
+    
     hook_name = sae.cfg.hook_name
 
     def reconstr_hook(activation, hook, sae_out):
@@ -40,13 +44,17 @@ def compute_reconstruction_loss(model, sae, token_batches):
 
     with t.no_grad(): 
         for batch in tqdm(token_batches, desc="Computing loss"):
-            _, cache = model.run_with_cache(batch, prepend_bos=True)
+            logits, cache = model.run_with_cache(batch, prepend_bos=True)
+            cache.to(device2)
+            del logits
             feature_acts = sae.encode(cache[hook_name])
-            del cache 
+            del cache
+            t.cuda.empty_cache()
 
-            sae_out = sae.decode(feature_acts)
+            sae_out = sae.decode(feature_acts).to(device1)
             del feature_acts
-            
+            t.cuda.empty_cache()
+
             loss = model.run_with_hooks(
                 batch,
                 fwd_hooks=[(hook_name, partial(reconstr_hook, sae_out=sae_out))],
@@ -55,26 +63,31 @@ def compute_reconstruction_loss(model, sae, token_batches):
             total_loss += loss
             count += 1
 
-            del sae_out 
             t.cuda.empty_cache()
 
     return round(total_loss / count, 3) if count > 0 else 0.0
 
 
 # ----------------------- Norm Cache Function -----------------------
-def compute_norms(model, sae, loader, kind="enc"):
+def compute_norms(model, sae, loader, kind="enc", device1=None, device2=None):
+    if device1 is None or device2 is None:
+        raise ValueError("Device not specified")
+    
     hook_name = sae.cfg.hook_name
     norms = []
     with t.no_grad():
         for batch in loader:
-            _, cache = model.run_with_cache_with_saes(batch, saes=[sae])
+            _, cache = model.run_with_cache_with_saes(batch, saes=[sae.to(device1)])
+            sae.to(device2)
+
             key = f"{hook_name}.hook_sae_acts_pre" if kind == "enc" else f"{hook_name}.hook_sae_recons"
             X = einops.rearrange(cache[key], "b h d -> (b h) d")
             norms.append(X.norm(p=2, dim=0))
 
-            del cache, X
+            del cache
             t.cuda.empty_cache()
     return t.stack(norms).mean(dim=0)
+
 
 
 # ----------------------- Collate Function -----------------------
@@ -104,11 +117,12 @@ if __name__ == "__main__":
     # Parse Args
     parser = argparse.ArgumentParser()
     parser.add_argument("--dataset", type=str, default="openwebtext")
-    parser.add_argument("--device", type=int, default="5")
+    parser.add_argument("--device", type=int, default="0")
     args = parser.parse_args()
 
     # Configs
-    dataset_name, device = args.dataset, f'cuda:{args.device}'
+    # dataset_name, device1, device2 = args.dataset, f'cuda:{args.device}', f'cuda:{args.device + 1}'
+    dataset_name, device1, device2 = args.dataset, f'cuda:{args.device}', 'cpu'
     model_name = 'gemma-2-2b'
     hook_ids = ["hook_resid_post", "hook_mlp_out", "hook_attn_out"] 
     release = {
@@ -127,27 +141,34 @@ if __name__ == "__main__":
             level=logging.INFO,
             format='%(message)s',
         )
-        logging.info(f"Using device: {device}")
+        logging.info(f"Using device: {device1}")
 
 
         # Load model
-        device = t.device(device)
+        # device1 = t.device(device1)
+        # device2 = t.device(device2)
+
         t.set_grad_enabled(False)
-        model: sae_lens.HookedSAETransformer = sae_lens.HookedSAETransformer.from_pretrained(model_name, device=device)
+        model: sae_lens.HookedSAETransformer = sae_lens.HookedSAETransformer.from_pretrained(model_name, device=device1)
         model.load_state_dict(t.load(f'/home/gupte.31/COLM/sae-compression/gemma2b/pruned/gemma-2-2b_wanda.pth'))
+        model.to(device1)
         logging.info("Model loaded")
         
         # Load dataset
         raw_dataset = transformer_lens.utils.get_dataset(dataset_name)
-        data = DataClass(raw_dataset, model, 128)
+        data = DataClass(raw_dataset, model, model.cfg.n_ctx)
+        del raw_dataset
 
         # Split dataset
-        total_samples = 128 + 128
+        total_samples = 128 + 128 + 8
         indices = t.randperm(len(data))[:total_samples]
         subset = Subset(data, indices)
-        train_set, val_set = random_split(subset, [128, 128])
+        train_set, val_set, test_set = random_split(subset, [128, 128, 8])
         train_loader = DataLoader(train_set, batch_size=1, shuffle=True, collate_fn=collate_fn)
         val_loader = DataLoader(val_set, batch_size=1, shuffle=False, collate_fn=collate_fn)
+        test_loader = DataLoader(test_set, batch_size=1, shuffle=False, collate_fn=collate_fn)
+
+        del data, train_set, val_set, test_set
 
         # Layer-wise pruning
         for layer in tqdm(range(model.cfg.n_layers)):
@@ -155,19 +176,20 @@ if __name__ == "__main__":
             pretrained_sae_id = f"layer_{layer}/width_16k/canonical"
             logging.info(f'Loading pretrained SAE: {pretrained_release}/{pretrained_sae_id}')
 
-            sae = sae_lens.SAE.from_pretrained(pretrained_release, pretrained_sae_id, device=str(device))[0]
-            sae.eval()
+            sae = sae_lens.SAE.from_pretrained(pretrained_release, pretrained_sae_id, device=device2)[0]
 
-            val_loss = compute_reconstruction_loss(model, sae, val_loader)
-            logging.info(f'Before pruning layer {layer} | Val loss: {val_loss} |')
+            val_loss = compute_reconstruction_loss(model, sae, val_loader, device1=device1, device2=device2)
+            test_loss = compute_reconstruction_loss(model, sae, test_loader, device1=device1, device2=device2)
+
+            logging.info(f'Before pruning layer {layer} | Val loss: {val_loss} | Test loss: {test_loss}')
 
             # Save original weights
-            original_W_enc = sae.W_enc.detach().clone()
-            original_W_dec = sae.W_dec.detach().clone()
+            original_W_enc = sae.W_enc.detach().clone().to(device2)
+            original_W_dec = sae.W_dec.detach().clone().to(device2)
 
             # Cache norms once
-            X_enc = compute_norms(model, sae, train_loader, kind="enc")
-            X_dec = compute_norms(model, sae, train_loader, kind="dec")
+            X_enc = compute_norms(model, sae, train_loader, kind="enc", device1=device1, device2=device2).to(device2)
+            X_dec = compute_norms(model, sae, train_loader, kind="dec", device1=device1, device2=device2).to(device2)
 
             best_ratio = None
             best_X_enc = None
@@ -178,7 +200,7 @@ if __name__ == "__main__":
 
             for ratio in sparse_ratios:
                 sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, ratio)
-                val_loss = compute_reconstruction_loss(model, sae, val_loader)
+                val_loss = compute_reconstruction_loss(model, sae, val_loader, device1=device1, device2=device2)
                 logging.info(f"Layer {layer} | Sparse Ratio: {ratio} | Val Loss: {val_loss}")
 
                 if ratio == 0.5:
@@ -198,6 +220,8 @@ if __name__ == "__main__":
 
             # Final prune with best ratio
             sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, best_X_enc, best_X_dec, best_ratio)
+            test_loss = compute_reconstruction_loss(model, sae, test_loader, device1=device1, device2=device2)
+            logging.info(f"Layer {layer} final test loss: {test_loss}")
 
             # Save pruned SAE
             save_path = f'/local/scratch/suchit/COLM/pruned_saes/{model_name}/wanda/{dataset_name}/{hook_id}'
@@ -206,7 +230,7 @@ if __name__ == "__main__":
 
 
             # Cleanup
-            del sae, original_W_enc, original_W_dec, X_enc, X_dec
+            del sae
             gc.collect()
             t.cuda.empty_cache()
 
