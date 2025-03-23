@@ -11,6 +11,8 @@ from functools import partial
 import einops
 import transformer_lens
 import sae_lens
+import time
+from huggingface_hub import list_repo_files
 
 # ----------------------- WANDA Pruning Function -----------------------
 @t.no_grad()
@@ -120,12 +122,16 @@ if __name__ == "__main__":
     dataset_name, device = args.dataset, f'cuda:{args.device}'
     # dataset_name, device1, device2 = args.dataset, f'cuda:{args.device}', 'cpu'
     model_name = 'gemma-2-2b'
-    hook_ids = ["hook_resid_post", "hook_mlp_out", "hook_attn_out"] 
+    # hook_ids = ["hook_resid_post", "hook_mlp_out", "attn.hook_z"] 
+    hook_ids = ["attn.hook_z"]
+
     release = {
         "hook_resid_post":"gemma-scope-2b-pt-res-canonical", 
         "hook_mlp_out": "gemma-scope-2b-pt-mlp-canonical", 
         "attn.hook_z": "gemma-scope-2b-pt-att-canonical"
     }
+
+    files_in_the_repo = list_repo_files("suchitg/sae-compression-gemma-2-2b-pruned-sae")
 
     for hook_id in hook_ids:
         log_dir = f'logs/{hook_id}'
@@ -145,6 +151,7 @@ if __name__ == "__main__":
         model: sae_lens.HookedSAETransformer = sae_lens.HookedSAETransformer.from_pretrained(model_name, device=device)
         model.load_state_dict(t.load(f'/home/gupte.31/COLM/sae-compression/gemma2b/pruned/gemma-2-2b_wanda.pth'))
         model.to(device)
+
         logging.info("Model loaded")
         # Load dataset
         raw_dataset = transformer_lens.utils.get_dataset(dataset_name)
@@ -152,37 +159,26 @@ if __name__ == "__main__":
         del raw_dataset
 
         # Split dataset
-        total_samples = 128 + 16
+        total_samples = 128 + 32
         indices = t.randperm(len(data))[:total_samples]
         subset = Subset(data, indices)
-        train_set, val_set = random_split(subset, [128, 16])
+        train_set, val_set = random_split(subset, [128, 32])
         del subset
         train_loader = DataLoader(train_set, batch_size=1, shuffle=True, collate_fn=collate_fn)
         val_loader = DataLoader(val_set, batch_size=1, shuffle=False, collate_fn=collate_fn)
         del data, train_set, val_set
 
-        layers = [
-            0, 1, 2,        # Early: often extract raw patterns
-            12, 13, 14,     # Mid: where composition and reasoning often happens
-            23, 24, 25,     # Late: responsible for output formatting, logic, etc.
-            3, 4, 5,
-            21, 22,
-            10, 11,
-            15, 16,
-            6, 7, 8,
-            17, 18, 19, 20,
-            9              # Often seen as less specialized
-        ]
+
         # Layer-wise pruning
-        for layer in tqdm(layers, desc="Pruning layers"):
+        for layer in tqdm(range(model.cfg.n_layers), desc="Layer-wise pruning"):
             pretrained_release = release[hook_id]
             pretrained_sae_id = f"layer_{layer}/width_16k/canonical"
             logging.info(f'Loading pretrained SAE: {pretrained_release}/{pretrained_sae_id}')
 
             sae = sae_lens.SAE.from_pretrained(pretrained_release, pretrained_sae_id, device=device)[0]
 
-            val_loss = compute_reconstruction_loss(model, sae, val_loader)
-            logging.info(f'Before pruning layer {layer} | Val loss: {val_loss} |')
+            # val_loss = compute_reconstruction_loss(model, sae, val_loader)
+            # logging.info(f'Before pruning layer {layer} | Val loss: {val_loss} |')
 
             # Save original weights
             original_W_enc = sae.W_enc.detach().clone()
@@ -191,49 +187,28 @@ if __name__ == "__main__":
             # Cache norms once
             X_enc = compute_norms(model, sae, train_loader, kind="enc")
             X_dec = compute_norms(model, sae, train_loader, kind="dec")
-
-            best_ratio = None
-            best_X_enc = None
-            best_X_dec = None
-            best_val_loss = float("inf")
-            sparse_ratios = np.array([0.99, 0.95, 0.9, 0.8, 0.75, 0.70, 0.60, 0.50, 0.40, 0.30, 0.25])
+            sparse_ratios = np.array([0.75, 0.50, 0.25])
             # sparse_ratios = np.array([0.5]) # For testing - comment out for full run
 
             for ratio in sparse_ratios:
-                sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, ratio)
-                val_loss = compute_reconstruction_loss(model, sae, val_loader)
-                logging.info(f"Layer {layer} | Sparse Ratio: {ratio} | Val Loss: {val_loss}")
+                filename = f'{dataset_name}_{ratio}_blocks.{layer}.{hook_id}/cfg.json'
+                if filename not in files_in_the_repo:
+                    sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, ratio)
+                    # val_loss = compute_reconstruction_loss(model, sae, val_loader)
+                    # logging.info(f"Layer {layer} | Sparse Ratio: {ratio} | Val Loss: {val_loss}")
 
-                if ratio == 0.5:
                     # Save pruned SAE
                     save_path = f'/local/scratch/suchit/COLM/pruned_saes/{model_name}/wanda/{dataset_name}/{hook_id}_ratio={ratio}'
                     os.makedirs(save_path, exist_ok=True)
                     t.save(sae.state_dict(), f'{save_path}/blocks.{layer}.{hook_id}.pth')
 
-                if val_loss < best_val_loss:
-                    best_val_loss = val_loss
-                    best_ratio = ratio
-                    best_X_enc = X_enc
-                    best_X_dec = X_dec
-                
-                del val_loss
+                    sae_lens.upload_saes_to_huggingface({f"{dataset_name}_{ratio}_blocks.{layer}.{hook_id}":sae}, hf_repo_id="suchitg/sae-compression-gemma-2-2b-pruned-sae")
+                    # del val_loss
 
-            del X_enc, X_dec
+            time.sleep(2)
+            print("Resume after 30 seconds")
+            del X_enc, X_dec, sae
 
-            logging.info(f"Layer {layer} best sparse ratio: {best_ratio} with val loss: {best_val_loss}")
-
-            # Final prune with best ratio
-            sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, best_X_enc, best_X_dec, best_ratio)
-            # test_loss = compute_reconstruction_loss(model, sae, test_loader)
-            # logging.info(f"Layer {layer} final test loss: {test_loss}")
-
-            # Save pruned SAE
-            save_path = f'/local/scratch/suchit/COLM/pruned_saes/{model_name}/wanda/{dataset_name}/{hook_id}'
-            os.makedirs(save_path, exist_ok=True)
-            t.save(sae.state_dict(), f'{save_path}/blocks.{layer}.{hook_id}.pth')
-
-            # Cleanup
-            del sae
             gc.collect()
             t.cuda.empty_cache()
 

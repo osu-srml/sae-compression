@@ -171,8 +171,8 @@ if __name__ == "__main__":
             best_X_enc = None
             best_X_dec = None
             best_val_loss = float("inf")
-            sparse_ratios = np.array([0.99, 0.95, 0.85, 0.80, 0.75, 0.70, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40, 0.35, 0.30, 0.25])
-            # sparse_ratios = np.array([0.5])
+            # sparse_ratios = np.array([0.99, 0.95, 0.85, 0.80, 0.75, 0.70, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40, 0.35, 0.30, 0.25])
+            sparse_ratios = np.array([0.5, 0.25])
 
             for ratio in sparse_ratios:
                 sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, ratio)
