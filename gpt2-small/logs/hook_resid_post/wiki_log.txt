@@ -1,0 +1,690 @@
+Using device: cuda:2
+Model loaded
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.0.hook_resid_post
+Before pruning layer 0 - Val loss: 4.756, Test loss: 5.039
+Layer 0 | Sparse Ratio: 0.99 | Val Loss: 13.771
+Layer 0 | Sparse Ratio: 0.95 | Val Loss: 14.626
+Layer 0 | Sparse Ratio: 0.85 | Val Loss: 12.383
+Layer 0 | Sparse Ratio: 0.8 | Val Loss: 12.076
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 11.59
+Layer 0 | Sparse Ratio: 0.7 | Val Loss: 11.129
+Layer 0 | Sparse Ratio: 0.65 | Val Loss: 10.493
+Layer 0 | Sparse Ratio: 0.6 | Val Loss: 9.803
+Layer 0 | Sparse Ratio: 0.55 | Val Loss: 9.117
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 6.229
+Layer 0 | Sparse Ratio: 0.45 | Val Loss: 6.213
+Layer 0 | Sparse Ratio: 0.4 | Val Loss: 6.399
+Layer 0 | Sparse Ratio: 0.35 | Val Loss: 5.426
+Layer 0 | Sparse Ratio: 0.3 | Val Loss: 5.388
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 5.373
+Layer 0 best sparse ratio: 0.25 with val loss: 5.373
+Layer 0 final test loss: 5.603
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.1.hook_resid_post
+Before pruning layer 1 - Val loss: 5.603, Test loss: 5.814
+Layer 1 | Sparse Ratio: 0.99 | Val Loss: 10.941
+Layer 1 | Sparse Ratio: 0.95 | Val Loss: 10.991
+Layer 1 | Sparse Ratio: 0.85 | Val Loss: 9.489
+Layer 1 | Sparse Ratio: 0.8 | Val Loss: 9.029
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 8.812
+Layer 1 | Sparse Ratio: 0.7 | Val Loss: 8.418
+Layer 1 | Sparse Ratio: 0.65 | Val Loss: 8.494
+Layer 1 | Sparse Ratio: 0.6 | Val Loss: 9.17
+Layer 1 | Sparse Ratio: 0.55 | Val Loss: 8.53
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 8.384
+Layer 1 | Sparse Ratio: 0.45 | Val Loss: 7.846
+Layer 1 | Sparse Ratio: 0.4 | Val Loss: 7.3
+Layer 1 | Sparse Ratio: 0.35 | Val Loss: 7.08
+Layer 1 | Sparse Ratio: 0.3 | Val Loss: 6.899
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 7.074
+Layer 1 best sparse ratio: 0.3 with val loss: 6.899
+Layer 1 final test loss: 7.16
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.2.hook_resid_post
+Before pruning layer 2 - Val loss: 4.766, Test loss: 4.904
+Layer 2 | Sparse Ratio: 0.99 | Val Loss: 11.988
+Layer 2 | Sparse Ratio: 0.95 | Val Loss: 10.216
+Layer 2 | Sparse Ratio: 0.85 | Val Loss: 8.873
+Layer 2 | Sparse Ratio: 0.8 | Val Loss: 8.479
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 8.528
+Layer 2 | Sparse Ratio: 0.7 | Val Loss: 7.974
+Layer 2 | Sparse Ratio: 0.65 | Val Loss: 7.69
+Layer 2 | Sparse Ratio: 0.6 | Val Loss: 7.319
+Layer 2 | Sparse Ratio: 0.55 | Val Loss: 7.262
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 7.104
+Layer 2 | Sparse Ratio: 0.45 | Val Loss: 6.838
+Layer 2 | Sparse Ratio: 0.4 | Val Loss: 6.714
+Layer 2 | Sparse Ratio: 0.35 | Val Loss: 6.307
+Layer 2 | Sparse Ratio: 0.3 | Val Loss: 6.108
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 5.883
+Layer 2 best sparse ratio: 0.25 with val loss: 5.883
+Layer 2 final test loss: 6.09
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.3.hook_resid_post
+Before pruning layer 3 - Val loss: 4.589, Test loss: 4.766
+Layer 3 | Sparse Ratio: 0.99 | Val Loss: 10.135
+Layer 3 | Sparse Ratio: 0.95 | Val Loss: 9.89
+Layer 3 | Sparse Ratio: 0.85 | Val Loss: 7.579
+Layer 3 | Sparse Ratio: 0.8 | Val Loss: 7.565
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 7.028
+Layer 3 | Sparse Ratio: 0.7 | Val Loss: 6.937
+Layer 3 | Sparse Ratio: 0.65 | Val Loss: 6.87
+Layer 3 | Sparse Ratio: 0.6 | Val Loss: 6.582
+Layer 3 | Sparse Ratio: 0.55 | Val Loss: 6.216
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 5.956
+Layer 3 | Sparse Ratio: 0.45 | Val Loss: 5.608
+Layer 3 | Sparse Ratio: 0.4 | Val Loss: 5.476
+Layer 3 | Sparse Ratio: 0.35 | Val Loss: 5.177
+Layer 3 | Sparse Ratio: 0.3 | Val Loss: 5.088
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 5.0
+Layer 3 best sparse ratio: 0.25 with val loss: 5.0
+Layer 3 final test loss: 5.218
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.4.hook_resid_post
+Before pruning layer 4 - Val loss: 4.313, Test loss: 4.488
+Layer 4 | Sparse Ratio: 0.99 | Val Loss: 9.767
+Layer 4 | Sparse Ratio: 0.95 | Val Loss: 8.892
+Layer 4 | Sparse Ratio: 0.85 | Val Loss: 8.463
+Layer 4 | Sparse Ratio: 0.8 | Val Loss: 7.562
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 7.376
+Layer 4 | Sparse Ratio: 0.7 | Val Loss: 7.342
+Layer 4 | Sparse Ratio: 0.65 | Val Loss: 6.935
+Layer 4 | Sparse Ratio: 0.6 | Val Loss: 6.585
+Layer 4 | Sparse Ratio: 0.55 | Val Loss: 6.294
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 6.056
+Layer 4 | Sparse Ratio: 0.45 | Val Loss: 5.722
+Layer 4 | Sparse Ratio: 0.4 | Val Loss: 5.469
+Layer 4 | Sparse Ratio: 0.35 | Val Loss: 5.235
+Layer 4 | Sparse Ratio: 0.3 | Val Loss: 5.02
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 4.795
+Layer 4 best sparse ratio: 0.25 with val loss: 4.795
+Layer 4 final test loss: 4.991
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.5.hook_resid_post
+Before pruning layer 5 - Val loss: 3.816, Test loss: 3.962
+Layer 5 | Sparse Ratio: 0.99 | Val Loss: 9.483
+Layer 5 | Sparse Ratio: 0.95 | Val Loss: 8.898
+Layer 5 | Sparse Ratio: 0.85 | Val Loss: 6.717
+Layer 5 | Sparse Ratio: 0.8 | Val Loss: 6.4
+Layer 5 | Sparse Ratio: 0.75 | Val Loss: 6.229
+Layer 5 | Sparse Ratio: 0.7 | Val Loss: 5.772
+Layer 5 | Sparse Ratio: 0.65 | Val Loss: 5.469
+Layer 5 | Sparse Ratio: 0.6 | Val Loss: 5.144
+Layer 5 | Sparse Ratio: 0.55 | Val Loss: 4.972
+Layer 5 | Sparse Ratio: 0.5 | Val Loss: 4.734
+Layer 5 | Sparse Ratio: 0.45 | Val Loss: 4.579
+Layer 5 | Sparse Ratio: 0.4 | Val Loss: 4.471
+Layer 5 | Sparse Ratio: 0.35 | Val Loss: 4.32
+Layer 5 | Sparse Ratio: 0.3 | Val Loss: 4.233
+Layer 5 | Sparse Ratio: 0.25 | Val Loss: 4.086
+Layer 5 best sparse ratio: 0.25 with val loss: 4.086
+Layer 5 final test loss: 4.242
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.6.hook_resid_post
+Before pruning layer 6 - Val loss: 3.614, Test loss: 3.752
+Layer 6 | Sparse Ratio: 0.99 | Val Loss: 9.003
+Layer 6 | Sparse Ratio: 0.95 | Val Loss: 8.427
+Layer 6 | Sparse Ratio: 0.85 | Val Loss: 6.486
+Layer 6 | Sparse Ratio: 0.8 | Val Loss: 6.064
+Layer 6 | Sparse Ratio: 0.75 | Val Loss: 5.577
+Layer 6 | Sparse Ratio: 0.7 | Val Loss: 5.218
+Layer 6 | Sparse Ratio: 0.65 | Val Loss: 5.144
+Layer 6 | Sparse Ratio: 0.6 | Val Loss: 4.806
+Layer 6 | Sparse Ratio: 0.55 | Val Loss: 4.45
+Layer 6 | Sparse Ratio: 0.5 | Val Loss: 4.402
+Layer 6 | Sparse Ratio: 0.45 | Val Loss: 4.287
+Layer 6 | Sparse Ratio: 0.4 | Val Loss: 4.145
+Layer 6 | Sparse Ratio: 0.35 | Val Loss: 4.06
+Layer 6 | Sparse Ratio: 0.3 | Val Loss: 3.984
+Layer 6 | Sparse Ratio: 0.25 | Val Loss: 3.888
+Layer 6 best sparse ratio: 0.25 with val loss: 3.888
+Layer 6 final test loss: 4.036
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.7.hook_resid_post
+Before pruning layer 7 - Val loss: 3.52, Test loss: 3.662
+Layer 7 | Sparse Ratio: 0.99 | Val Loss: 8.942
+Layer 7 | Sparse Ratio: 0.95 | Val Loss: 8.198
+Layer 7 | Sparse Ratio: 0.85 | Val Loss: 6.319
+Layer 7 | Sparse Ratio: 0.8 | Val Loss: 5.583
+Layer 7 | Sparse Ratio: 0.75 | Val Loss: 5.129
+Layer 7 | Sparse Ratio: 0.7 | Val Loss: 4.773
+Layer 7 | Sparse Ratio: 0.65 | Val Loss: 4.53
+Layer 7 | Sparse Ratio: 0.6 | Val Loss: 4.319
+Layer 7 | Sparse Ratio: 0.55 | Val Loss: 4.146
+Layer 7 | Sparse Ratio: 0.5 | Val Loss: 4.061
+Layer 7 | Sparse Ratio: 0.45 | Val Loss: 3.972
+Layer 7 | Sparse Ratio: 0.4 | Val Loss: 3.862
+Layer 7 | Sparse Ratio: 0.35 | Val Loss: 3.791
+Layer 7 | Sparse Ratio: 0.3 | Val Loss: 3.72
+Layer 7 | Sparse Ratio: 0.25 | Val Loss: 3.608
+Layer 7 best sparse ratio: 0.25 with val loss: 3.608
+Layer 7 final test loss: 3.746
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.8.hook_resid_post
+Before pruning layer 8 - Val loss: 3.309, Test loss: 3.45
+Layer 8 | Sparse Ratio: 0.99 | Val Loss: 8.243
+Layer 8 | Sparse Ratio: 0.95 | Val Loss: 7.528
+Layer 8 | Sparse Ratio: 0.85 | Val Loss: 5.844
+Layer 8 | Sparse Ratio: 0.8 | Val Loss: 5.29
+Layer 8 | Sparse Ratio: 0.75 | Val Loss: 4.827
+Layer 8 | Sparse Ratio: 0.7 | Val Loss: 4.536
+Layer 8 | Sparse Ratio: 0.65 | Val Loss: 4.267
+Layer 8 | Sparse Ratio: 0.6 | Val Loss: 4.116
+Layer 8 | Sparse Ratio: 0.55 | Val Loss: 4.003
+Layer 8 | Sparse Ratio: 0.5 | Val Loss: 3.877
+Layer 8 | Sparse Ratio: 0.45 | Val Loss: 3.758
+Layer 8 | Sparse Ratio: 0.4 | Val Loss: 3.692
+Layer 8 | Sparse Ratio: 0.35 | Val Loss: 3.596
+Layer 8 | Sparse Ratio: 0.3 | Val Loss: 3.515
+Layer 8 | Sparse Ratio: 0.25 | Val Loss: 3.424
+Layer 8 best sparse ratio: 0.25 with val loss: 3.424
+Layer 8 final test loss: 3.565
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.9.hook_resid_post
+Before pruning layer 9 - Val loss: 3.185, Test loss: 3.321
+Layer 9 | Sparse Ratio: 0.99 | Val Loss: 7.981
+Layer 9 | Sparse Ratio: 0.95 | Val Loss: 7.226
+Layer 9 | Sparse Ratio: 0.85 | Val Loss: 5.91
+Layer 9 | Sparse Ratio: 0.8 | Val Loss: 5.15
+Layer 9 | Sparse Ratio: 0.75 | Val Loss: 4.686
+Layer 9 | Sparse Ratio: 0.7 | Val Loss: 4.364
+Layer 9 | Sparse Ratio: 0.65 | Val Loss: 4.11
+Layer 9 | Sparse Ratio: 0.6 | Val Loss: 3.917
+Layer 9 | Sparse Ratio: 0.55 | Val Loss: 3.766
+Layer 9 | Sparse Ratio: 0.5 | Val Loss: 3.645
+Layer 9 | Sparse Ratio: 0.45 | Val Loss: 3.555
+Layer 9 | Sparse Ratio: 0.4 | Val Loss: 3.459
+Layer 9 | Sparse Ratio: 0.35 | Val Loss: 3.362
+Layer 9 | Sparse Ratio: 0.3 | Val Loss: 3.295
+Layer 9 | Sparse Ratio: 0.25 | Val Loss: 3.238
+Layer 9 best sparse ratio: 0.25 with val loss: 3.238
+Layer 9 final test loss: 3.371
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.10.hook_resid_post
+Before pruning layer 10 - Val loss: 3.226, Test loss: 3.354
+Layer 10 | Sparse Ratio: 0.99 | Val Loss: 8.016
+Layer 10 | Sparse Ratio: 0.95 | Val Loss: 7.223
+Layer 10 | Sparse Ratio: 0.85 | Val Loss: 5.678
+Layer 10 | Sparse Ratio: 0.8 | Val Loss: 5.264
+Layer 10 | Sparse Ratio: 0.75 | Val Loss: 4.805
+Layer 10 | Sparse Ratio: 0.7 | Val Loss: 4.404
+Layer 10 | Sparse Ratio: 0.65 | Val Loss: 4.137
+Layer 10 | Sparse Ratio: 0.6 | Val Loss: 3.935
+Layer 10 | Sparse Ratio: 0.55 | Val Loss: 3.765
+Layer 10 | Sparse Ratio: 0.5 | Val Loss: 3.665
+Layer 10 | Sparse Ratio: 0.45 | Val Loss: 3.51
+Layer 10 | Sparse Ratio: 0.4 | Val Loss: 3.378
+Layer 10 | Sparse Ratio: 0.35 | Val Loss: 3.277
+Layer 10 | Sparse Ratio: 0.3 | Val Loss: 3.219
+Layer 10 | Sparse Ratio: 0.25 | Val Loss: 3.193
+Layer 10 best sparse ratio: 0.25 with val loss: 3.193
+Layer 10 final test loss: 3.322
+Loading pretrained SAE: gpt2-small-resid-post-v5-32k/blocks.11.hook_resid_post
+Before pruning layer 11 - Val loss: 3.153, Test loss: 3.279
+Layer 11 | Sparse Ratio: 0.99 | Val Loss: 7.474
+Layer 11 | Sparse Ratio: 0.95 | Val Loss: 7.232
+Layer 11 | Sparse Ratio: 0.85 | Val Loss: 6.297
+Layer 11 | Sparse Ratio: 0.8 | Val Loss: 5.854
+Layer 11 | Sparse Ratio: 0.75 | Val Loss: 5.637
+Layer 11 | Sparse Ratio: 0.7 | Val Loss: 5.232
+Layer 11 | Sparse Ratio: 0.65 | Val Loss: 5.02
+Layer 11 | Sparse Ratio: 0.6 | Val Loss: 4.411
+Layer 11 | Sparse Ratio: 0.55 | Val Loss: 4.248
+Layer 11 | Sparse Ratio: 0.5 | Val Loss: 4.032
+Layer 11 | Sparse Ratio: 0.45 | Val Loss: 3.817
+Layer 11 | Sparse Ratio: 0.4 | Val Loss: 3.629
+Layer 11 | Sparse Ratio: 0.35 | Val Loss: 3.477
+Layer 11 | Sparse Ratio: 0.3 | Val Loss: 3.353
+Layer 11 | Sparse Ratio: 0.25 | Val Loss: 3.256
+Layer 11 best sparse ratio: 0.25 with val loss: 3.256
+Layer 11 final test loss: 3.396
+Using device: cuda:2
+Model loaded
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.0.hook_mlp_out
+Before pruning layer 0 - Val loss: 2.839, Test loss: 3.019
+Layer 0 | Sparse Ratio: 0.99 | Val Loss: 10.42
+Layer 0 | Sparse Ratio: 0.95 | Val Loss: 10.034
+Layer 0 | Sparse Ratio: 0.85 | Val Loss: 5.43
+Layer 0 | Sparse Ratio: 0.8 | Val Loss: 4.699
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 4.221
+Layer 0 | Sparse Ratio: 0.7 | Val Loss: 4.0
+Layer 0 | Sparse Ratio: 0.65 | Val Loss: 3.692
+Layer 0 | Sparse Ratio: 0.6 | Val Loss: 3.603
+Layer 0 | Sparse Ratio: 0.55 | Val Loss: 3.473
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 3.376
+Layer 0 | Sparse Ratio: 0.45 | Val Loss: 3.221
+Layer 0 | Sparse Ratio: 0.4 | Val Loss: 3.244
+Layer 0 | Sparse Ratio: 0.35 | Val Loss: 3.209
+Layer 0 | Sparse Ratio: 0.3 | Val Loss: 3.175
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 3.066
+Layer 0 best sparse ratio: 0.25 with val loss: 3.066
+Layer 0 final test loss: 3.265
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.1.hook_mlp_out
+Before pruning layer 1 - Val loss: 2.806, Test loss: 2.979
+Layer 1 | Sparse Ratio: 0.99 | Val Loss: 2.858
+Layer 1 | Sparse Ratio: 0.95 | Val Loss: 2.873
+Layer 1 | Sparse Ratio: 0.85 | Val Loss: 2.91
+Layer 1 | Sparse Ratio: 0.8 | Val Loss: 2.909
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 2.941
+Layer 1 | Sparse Ratio: 0.7 | Val Loss: 2.909
+Layer 1 | Sparse Ratio: 0.65 | Val Loss: 2.902
+Layer 1 | Sparse Ratio: 0.6 | Val Loss: 2.899
+Layer 1 | Sparse Ratio: 0.55 | Val Loss: 2.914
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 2.904
+Layer 1 | Sparse Ratio: 0.45 | Val Loss: 2.863
+Layer 1 | Sparse Ratio: 0.4 | Val Loss: 2.854
+Layer 1 | Sparse Ratio: 0.35 | Val Loss: 2.852
+Layer 1 | Sparse Ratio: 0.3 | Val Loss: 2.837
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 2.834
+Layer 1 best sparse ratio: 0.25 with val loss: 2.834
+Layer 1 final test loss: 3.011
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.2.hook_mlp_out
+Before pruning layer 2 - Val loss: 2.81, Test loss: 2.983
+Layer 2 | Sparse Ratio: 0.99 | Val Loss: 3.027
+Layer 2 | Sparse Ratio: 0.95 | Val Loss: 3.108
+Layer 2 | Sparse Ratio: 0.85 | Val Loss: 3.106
+Layer 2 | Sparse Ratio: 0.8 | Val Loss: 3.131
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 3.12
+Layer 2 | Sparse Ratio: 0.7 | Val Loss: 3.039
+Layer 2 | Sparse Ratio: 0.65 | Val Loss: 2.975
+Layer 2 | Sparse Ratio: 0.6 | Val Loss: 2.948
+Layer 2 | Sparse Ratio: 0.55 | Val Loss: 2.935
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 2.928
+Layer 2 | Sparse Ratio: 0.45 | Val Loss: 2.886
+Layer 2 | Sparse Ratio: 0.4 | Val Loss: 2.864
+Layer 2 | Sparse Ratio: 0.35 | Val Loss: 2.858
+Layer 2 | Sparse Ratio: 0.3 | Val Loss: 2.854
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 2.835
+Layer 2 best sparse ratio: 0.25 with val loss: 2.835
+Layer 2 final test loss: 3.008
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.3.hook_mlp_out
+Before pruning layer 3 - Val loss: 2.808, Test loss: 2.983
+Layer 3 | Sparse Ratio: 0.99 | Val Loss: 2.832
+Layer 3 | Sparse Ratio: 0.95 | Val Loss: 2.835
+Layer 3 | Sparse Ratio: 0.85 | Val Loss: 2.832
+Layer 3 | Sparse Ratio: 0.8 | Val Loss: 2.826
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 2.825
+Layer 3 | Sparse Ratio: 0.7 | Val Loss: 2.823
+Layer 3 | Sparse Ratio: 0.65 | Val Loss: 2.82
+Layer 3 | Sparse Ratio: 0.6 | Val Loss: 2.817
+Layer 3 | Sparse Ratio: 0.55 | Val Loss: 2.816
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 2.815
+Layer 3 | Sparse Ratio: 0.45 | Val Loss: 2.814
+Layer 3 | Sparse Ratio: 0.4 | Val Loss: 2.813
+Layer 3 | Sparse Ratio: 0.35 | Val Loss: 2.813
+Layer 3 | Sparse Ratio: 0.3 | Val Loss: 2.813
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 2.812
+Layer 3 best sparse ratio: 0.25 with val loss: 2.812
+Layer 3 final test loss: 2.987
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.4.hook_mlp_out
+Before pruning layer 4 - Val loss: 2.818, Test loss: 2.991
+Layer 4 | Sparse Ratio: 0.99 | Val Loss: 2.839
+Layer 4 | Sparse Ratio: 0.95 | Val Loss: 2.837
+Layer 4 | Sparse Ratio: 0.85 | Val Loss: 2.837
+Layer 4 | Sparse Ratio: 0.8 | Val Loss: 2.835
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 2.833
+Layer 4 | Sparse Ratio: 0.7 | Val Loss: 2.831
+Layer 4 | Sparse Ratio: 0.65 | Val Loss: 2.828
+Layer 4 | Sparse Ratio: 0.6 | Val Loss: 2.826
+Layer 4 | Sparse Ratio: 0.55 | Val Loss: 2.824
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 2.822
+Layer 4 | Sparse Ratio: 0.45 | Val Loss: 2.821
+Layer 4 | Sparse Ratio: 0.4 | Val Loss: 2.82
+Layer 4 | Sparse Ratio: 0.35 | Val Loss: 2.819
+Layer 4 | Sparse Ratio: 0.3 | Val Loss: 2.819
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 2.818
+Layer 4 best sparse ratio: 0.25 with val loss: 2.818
+Layer 4 final test loss: 2.991
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.5.hook_mlp_out
+Before pruning layer 5 - Val loss: 2.807, Test loss: 2.983
+Layer 5 | Sparse Ratio: 0.99 | Val Loss: 2.836
+Layer 5 | Sparse Ratio: 0.95 | Val Loss: 2.834
+Layer 5 | Sparse Ratio: 0.85 | Val Loss: 2.831
+Layer 5 | Sparse Ratio: 0.8 | Val Loss: 2.828
+Layer 5 | Sparse Ratio: 0.75 | Val Loss: 2.824
+Layer 5 | Sparse Ratio: 0.7 | Val Loss: 2.821
+Layer 5 | Sparse Ratio: 0.65 | Val Loss: 2.819
+Layer 5 | Sparse Ratio: 0.6 | Val Loss: 2.815
+Layer 5 | Sparse Ratio: 0.55 | Val Loss: 2.813
+Layer 5 | Sparse Ratio: 0.5 | Val Loss: 2.81
+Layer 5 | Sparse Ratio: 0.45 | Val Loss: 2.808
+Layer 5 | Sparse Ratio: 0.4 | Val Loss: 2.809
+Layer 5 | Sparse Ratio: 0.35 | Val Loss: 2.809
+Layer 5 | Sparse Ratio: 0.3 | Val Loss: 2.809
+Layer 5 | Sparse Ratio: 0.25 | Val Loss: 2.81
+Layer 5 best sparse ratio: 0.45 with val loss: 2.808
+Layer 5 final test loss: 2.986
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.6.hook_mlp_out
+Before pruning layer 6 - Val loss: 2.81, Test loss: 2.987
+Layer 6 | Sparse Ratio: 0.99 | Val Loss: 2.823
+Layer 6 | Sparse Ratio: 0.95 | Val Loss: 2.82
+Layer 6 | Sparse Ratio: 0.85 | Val Loss: 2.815
+Layer 6 | Sparse Ratio: 0.8 | Val Loss: 2.813
+Layer 6 | Sparse Ratio: 0.75 | Val Loss: 2.814
+Layer 6 | Sparse Ratio: 0.7 | Val Loss: 2.814
+Layer 6 | Sparse Ratio: 0.65 | Val Loss: 2.817
+Layer 6 | Sparse Ratio: 0.6 | Val Loss: 2.815
+Layer 6 | Sparse Ratio: 0.55 | Val Loss: 2.815
+Layer 6 | Sparse Ratio: 0.5 | Val Loss: 2.815
+Layer 6 | Sparse Ratio: 0.45 | Val Loss: 2.814
+Layer 6 | Sparse Ratio: 0.4 | Val Loss: 2.815
+Layer 6 | Sparse Ratio: 0.35 | Val Loss: 2.814
+Layer 6 | Sparse Ratio: 0.3 | Val Loss: 2.814
+Layer 6 | Sparse Ratio: 0.25 | Val Loss: 2.814
+Layer 6 best sparse ratio: 0.8 with val loss: 2.813
+Layer 6 final test loss: 2.996
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.7.hook_mlp_out
+Before pruning layer 7 - Val loss: 2.816, Test loss: 2.99
+Layer 7 | Sparse Ratio: 0.99 | Val Loss: 2.86
+Layer 7 | Sparse Ratio: 0.95 | Val Loss: 2.854
+Layer 7 | Sparse Ratio: 0.85 | Val Loss: 2.842
+Layer 7 | Sparse Ratio: 0.8 | Val Loss: 2.84
+Layer 7 | Sparse Ratio: 0.75 | Val Loss: 2.837
+Layer 7 | Sparse Ratio: 0.7 | Val Loss: 2.834
+Layer 7 | Sparse Ratio: 0.65 | Val Loss: 2.831
+Layer 7 | Sparse Ratio: 0.6 | Val Loss: 2.828
+Layer 7 | Sparse Ratio: 0.55 | Val Loss: 2.826
+Layer 7 | Sparse Ratio: 0.5 | Val Loss: 2.824
+Layer 7 | Sparse Ratio: 0.45 | Val Loss: 2.822
+Layer 7 | Sparse Ratio: 0.4 | Val Loss: 2.822
+Layer 7 | Sparse Ratio: 0.35 | Val Loss: 2.82
+Layer 7 | Sparse Ratio: 0.3 | Val Loss: 2.819
+Layer 7 | Sparse Ratio: 0.25 | Val Loss: 2.818
+Layer 7 best sparse ratio: 0.25 with val loss: 2.818
+Layer 7 final test loss: 2.992
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.8.hook_mlp_out
+Before pruning layer 8 - Val loss: 2.818, Test loss: 2.992
+Layer 8 | Sparse Ratio: 0.99 | Val Loss: 2.85
+Layer 8 | Sparse Ratio: 0.95 | Val Loss: 2.844
+Layer 8 | Sparse Ratio: 0.85 | Val Loss: 2.838
+Layer 8 | Sparse Ratio: 0.8 | Val Loss: 2.835
+Layer 8 | Sparse Ratio: 0.75 | Val Loss: 2.835
+Layer 8 | Sparse Ratio: 0.7 | Val Loss: 2.833
+Layer 8 | Sparse Ratio: 0.65 | Val Loss: 2.832
+Layer 8 | Sparse Ratio: 0.6 | Val Loss: 2.831
+Layer 8 | Sparse Ratio: 0.55 | Val Loss: 2.829
+Layer 8 | Sparse Ratio: 0.5 | Val Loss: 2.827
+Layer 8 | Sparse Ratio: 0.45 | Val Loss: 2.826
+Layer 8 | Sparse Ratio: 0.4 | Val Loss: 2.824
+Layer 8 | Sparse Ratio: 0.35 | Val Loss: 2.825
+Layer 8 | Sparse Ratio: 0.3 | Val Loss: 2.824
+Layer 8 | Sparse Ratio: 0.25 | Val Loss: 2.822
+Layer 8 best sparse ratio: 0.25 with val loss: 2.822
+Layer 8 final test loss: 2.998
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.9.hook_mlp_out
+Before pruning layer 9 - Val loss: 2.817, Test loss: 2.992
+Layer 9 | Sparse Ratio: 0.99 | Val Loss: 2.865
+Layer 9 | Sparse Ratio: 0.95 | Val Loss: 2.857
+Layer 9 | Sparse Ratio: 0.85 | Val Loss: 2.846
+Layer 9 | Sparse Ratio: 0.8 | Val Loss: 2.842
+Layer 9 | Sparse Ratio: 0.75 | Val Loss: 2.839
+Layer 9 | Sparse Ratio: 0.7 | Val Loss: 2.836
+Layer 9 | Sparse Ratio: 0.65 | Val Loss: 2.833
+Layer 9 | Sparse Ratio: 0.6 | Val Loss: 2.83
+Layer 9 | Sparse Ratio: 0.55 | Val Loss: 2.827
+Layer 9 | Sparse Ratio: 0.5 | Val Loss: 2.825
+Layer 9 | Sparse Ratio: 0.45 | Val Loss: 2.824
+Layer 9 | Sparse Ratio: 0.4 | Val Loss: 2.823
+Layer 9 | Sparse Ratio: 0.35 | Val Loss: 2.823
+Layer 9 | Sparse Ratio: 0.3 | Val Loss: 2.823
+Layer 9 | Sparse Ratio: 0.25 | Val Loss: 2.823
+Layer 9 best sparse ratio: 0.4 with val loss: 2.823
+Layer 9 final test loss: 2.998
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.10.hook_mlp_out
+Before pruning layer 10 - Val loss: 2.825, Test loss: 2.998
+Layer 10 | Sparse Ratio: 0.99 | Val Loss: 2.859
+Layer 10 | Sparse Ratio: 0.95 | Val Loss: 2.866
+Layer 10 | Sparse Ratio: 0.85 | Val Loss: 2.867
+Layer 10 | Sparse Ratio: 0.8 | Val Loss: 2.866
+Layer 10 | Sparse Ratio: 0.75 | Val Loss: 2.862
+Layer 10 | Sparse Ratio: 0.7 | Val Loss: 2.857
+Layer 10 | Sparse Ratio: 0.65 | Val Loss: 2.851
+Layer 10 | Sparse Ratio: 0.6 | Val Loss: 2.848
+Layer 10 | Sparse Ratio: 0.55 | Val Loss: 2.845
+Layer 10 | Sparse Ratio: 0.5 | Val Loss: 2.841
+Layer 10 | Sparse Ratio: 0.45 | Val Loss: 2.836
+Layer 10 | Sparse Ratio: 0.4 | Val Loss: 2.833
+Layer 10 | Sparse Ratio: 0.35 | Val Loss: 2.83
+Layer 10 | Sparse Ratio: 0.3 | Val Loss: 2.83
+Layer 10 | Sparse Ratio: 0.25 | Val Loss: 2.828
+Layer 10 best sparse ratio: 0.25 with val loss: 2.828
+Layer 10 final test loss: 3.001
+Loading pretrained SAE: gpt2-small-mlp-out-v5-32k/blocks.11.hook_mlp_out
+Before pruning layer 11 - Val loss: 2.833, Test loss: 3.008
+Layer 11 | Sparse Ratio: 0.99 | Val Loss: 2.905
+Layer 11 | Sparse Ratio: 0.95 | Val Loss: 2.917
+Layer 11 | Sparse Ratio: 0.85 | Val Loss: 2.899
+Layer 11 | Sparse Ratio: 0.8 | Val Loss: 2.884
+Layer 11 | Sparse Ratio: 0.75 | Val Loss: 2.879
+Layer 11 | Sparse Ratio: 0.7 | Val Loss: 2.867
+Layer 11 | Sparse Ratio: 0.65 | Val Loss: 2.865
+Layer 11 | Sparse Ratio: 0.6 | Val Loss: 2.858
+Layer 11 | Sparse Ratio: 0.55 | Val Loss: 2.854
+Layer 11 | Sparse Ratio: 0.5 | Val Loss: 2.854
+Layer 11 | Sparse Ratio: 0.45 | Val Loss: 2.85
+Layer 11 | Sparse Ratio: 0.4 | Val Loss: 2.842
+Layer 11 | Sparse Ratio: 0.35 | Val Loss: 2.838
+Layer 11 | Sparse Ratio: 0.3 | Val Loss: 2.835
+Layer 11 | Sparse Ratio: 0.25 | Val Loss: 2.837
+Layer 11 best sparse ratio: 0.3 with val loss: 2.835
+Layer 11 final test loss: 3.009
+Using device: cuda:2
+Model loaded
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.0.hook_attn_out
+Before pruning layer 0 - Val loss: 4.042, Test loss: 4.034
+Layer 0 | Sparse Ratio: 0.99 | Val Loss: 4.279
+Layer 0 | Sparse Ratio: 0.95 | Val Loss: 3.729
+Layer 0 | Sparse Ratio: 0.85 | Val Loss: 3.782
+Layer 0 | Sparse Ratio: 0.8 | Val Loss: 3.891
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 3.823
+Layer 0 | Sparse Ratio: 0.7 | Val Loss: 3.8
+Layer 0 | Sparse Ratio: 0.65 | Val Loss: 3.998
+Layer 0 | Sparse Ratio: 0.6 | Val Loss: 4.024
+Layer 0 | Sparse Ratio: 0.55 | Val Loss: 4.209
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 4.235
+Layer 0 | Sparse Ratio: 0.45 | Val Loss: 4.141
+Layer 0 | Sparse Ratio: 0.4 | Val Loss: 4.208
+Layer 0 | Sparse Ratio: 0.35 | Val Loss: 4.251
+Layer 0 | Sparse Ratio: 0.3 | Val Loss: 4.325
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 4.15
+Layer 0 best sparse ratio: 0.95 with val loss: 3.729
+Layer 0 final test loss: 3.701
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.1.hook_attn_out
+Before pruning layer 1 - Val loss: 2.931, Test loss: 2.908
+Layer 1 | Sparse Ratio: 0.99 | Val Loss: 2.941
+Layer 1 | Sparse Ratio: 0.95 | Val Loss: 2.941
+Layer 1 | Sparse Ratio: 0.85 | Val Loss: 2.947
+Layer 1 | Sparse Ratio: 0.8 | Val Loss: 2.948
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 2.946
+Layer 1 | Sparse Ratio: 0.7 | Val Loss: 2.948
+Layer 1 | Sparse Ratio: 0.65 | Val Loss: 2.943
+Layer 1 | Sparse Ratio: 0.6 | Val Loss: 2.941
+Layer 1 | Sparse Ratio: 0.55 | Val Loss: 2.939
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 2.936
+Layer 1 | Sparse Ratio: 0.45 | Val Loss: 2.935
+Layer 1 | Sparse Ratio: 0.4 | Val Loss: 2.933
+Layer 1 | Sparse Ratio: 0.35 | Val Loss: 2.933
+Layer 1 | Sparse Ratio: 0.3 | Val Loss: 2.932
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 2.931
+Layer 1 best sparse ratio: 0.25 with val loss: 2.931
+Layer 1 final test loss: 2.908
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.2.hook_attn_out
+Before pruning layer 2 - Val loss: 2.932, Test loss: 2.906
+Layer 2 | Sparse Ratio: 0.99 | Val Loss: 2.96
+Layer 2 | Sparse Ratio: 0.95 | Val Loss: 2.959
+Layer 2 | Sparse Ratio: 0.85 | Val Loss: 2.955
+Layer 2 | Sparse Ratio: 0.8 | Val Loss: 2.952
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 2.95
+Layer 2 | Sparse Ratio: 0.7 | Val Loss: 2.948
+Layer 2 | Sparse Ratio: 0.65 | Val Loss: 2.943
+Layer 2 | Sparse Ratio: 0.6 | Val Loss: 2.94
+Layer 2 | Sparse Ratio: 0.55 | Val Loss: 2.94
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 2.938
+Layer 2 | Sparse Ratio: 0.45 | Val Loss: 2.936
+Layer 2 | Sparse Ratio: 0.4 | Val Loss: 2.935
+Layer 2 | Sparse Ratio: 0.35 | Val Loss: 2.935
+Layer 2 | Sparse Ratio: 0.3 | Val Loss: 2.935
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 2.934
+Layer 2 best sparse ratio: 0.25 with val loss: 2.934
+Layer 2 final test loss: 2.908
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.3.hook_attn_out
+Before pruning layer 3 - Val loss: 2.932, Test loss: 2.909
+Layer 3 | Sparse Ratio: 0.99 | Val Loss: 2.96
+Layer 3 | Sparse Ratio: 0.95 | Val Loss: 2.958
+Layer 3 | Sparse Ratio: 0.85 | Val Loss: 2.954
+Layer 3 | Sparse Ratio: 0.8 | Val Loss: 2.953
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 2.952
+Layer 3 | Sparse Ratio: 0.7 | Val Loss: 2.948
+Layer 3 | Sparse Ratio: 0.65 | Val Loss: 2.944
+Layer 3 | Sparse Ratio: 0.6 | Val Loss: 2.942
+Layer 3 | Sparse Ratio: 0.55 | Val Loss: 2.94
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 2.94
+Layer 3 | Sparse Ratio: 0.45 | Val Loss: 2.939
+Layer 3 | Sparse Ratio: 0.4 | Val Loss: 2.937
+Layer 3 | Sparse Ratio: 0.35 | Val Loss: 2.936
+Layer 3 | Sparse Ratio: 0.3 | Val Loss: 2.935
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 2.935
+Layer 3 best sparse ratio: 0.3 with val loss: 2.935
+Layer 3 final test loss: 2.912
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.4.hook_attn_out
+Before pruning layer 4 - Val loss: 2.937, Test loss: 2.91
+Layer 4 | Sparse Ratio: 0.99 | Val Loss: 2.98
+Layer 4 | Sparse Ratio: 0.95 | Val Loss: 2.974
+Layer 4 | Sparse Ratio: 0.85 | Val Loss: 2.962
+Layer 4 | Sparse Ratio: 0.8 | Val Loss: 2.956
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 2.952
+Layer 4 | Sparse Ratio: 0.7 | Val Loss: 2.948
+Layer 4 | Sparse Ratio: 0.65 | Val Loss: 2.945
+Layer 4 | Sparse Ratio: 0.6 | Val Loss: 2.942
+Layer 4 | Sparse Ratio: 0.55 | Val Loss: 2.941
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 2.938
+Layer 4 | Sparse Ratio: 0.45 | Val Loss: 2.936
+Layer 4 | Sparse Ratio: 0.4 | Val Loss: 2.938
+Layer 4 | Sparse Ratio: 0.35 | Val Loss: 2.939
+Layer 4 | Sparse Ratio: 0.3 | Val Loss: 2.938
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 2.937
+Layer 4 best sparse ratio: 0.45 with val loss: 2.936
+Layer 4 final test loss: 2.912
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.5.hook_attn_out
+Before pruning layer 5 - Val loss: 2.947, Test loss: 2.922
+Layer 5 | Sparse Ratio: 0.99 | Val Loss: 3.012
+Layer 5 | Sparse Ratio: 0.95 | Val Loss: 3.01
+Layer 5 | Sparse Ratio: 0.85 | Val Loss: 2.998
+Layer 5 | Sparse Ratio: 0.8 | Val Loss: 2.988
+Layer 5 | Sparse Ratio: 0.75 | Val Loss: 2.973
+Layer 5 | Sparse Ratio: 0.7 | Val Loss: 2.963
+Layer 5 | Sparse Ratio: 0.65 | Val Loss: 2.959
+Layer 5 | Sparse Ratio: 0.6 | Val Loss: 2.951
+Layer 5 | Sparse Ratio: 0.55 | Val Loss: 2.949
+Layer 5 | Sparse Ratio: 0.5 | Val Loss: 2.947
+Layer 5 | Sparse Ratio: 0.45 | Val Loss: 2.947
+Layer 5 | Sparse Ratio: 0.4 | Val Loss: 2.947
+Layer 5 | Sparse Ratio: 0.35 | Val Loss: 2.947
+Layer 5 | Sparse Ratio: 0.3 | Val Loss: 2.947
+Layer 5 | Sparse Ratio: 0.25 | Val Loss: 2.945
+Layer 5 best sparse ratio: 0.25 with val loss: 2.945
+Layer 5 final test loss: 2.92
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.6.hook_attn_out
+Before pruning layer 6 - Val loss: 2.943, Test loss: 2.915
+Layer 6 | Sparse Ratio: 0.99 | Val Loss: 3.011
+Layer 6 | Sparse Ratio: 0.95 | Val Loss: 3.001
+Layer 6 | Sparse Ratio: 0.85 | Val Loss: 2.98
+Layer 6 | Sparse Ratio: 0.8 | Val Loss: 2.97
+Layer 6 | Sparse Ratio: 0.75 | Val Loss: 2.962
+Layer 6 | Sparse Ratio: 0.7 | Val Loss: 2.957
+Layer 6 | Sparse Ratio: 0.65 | Val Loss: 2.951
+Layer 6 | Sparse Ratio: 0.6 | Val Loss: 2.946
+Layer 6 | Sparse Ratio: 0.55 | Val Loss: 2.944
+Layer 6 | Sparse Ratio: 0.5 | Val Loss: 2.943
+Layer 6 | Sparse Ratio: 0.45 | Val Loss: 2.942
+Layer 6 | Sparse Ratio: 0.4 | Val Loss: 2.94
+Layer 6 | Sparse Ratio: 0.35 | Val Loss: 2.939
+Layer 6 | Sparse Ratio: 0.3 | Val Loss: 2.938
+Layer 6 | Sparse Ratio: 0.25 | Val Loss: 2.938
+Layer 6 best sparse ratio: 0.3 with val loss: 2.938
+Layer 6 final test loss: 2.913
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.7.hook_attn_out
+Before pruning layer 7 - Val loss: 2.939, Test loss: 2.914
+Layer 7 | Sparse Ratio: 0.99 | Val Loss: 2.988
+Layer 7 | Sparse Ratio: 0.95 | Val Loss: 2.988
+Layer 7 | Sparse Ratio: 0.85 | Val Loss: 2.975
+Layer 7 | Sparse Ratio: 0.8 | Val Loss: 2.968
+Layer 7 | Sparse Ratio: 0.75 | Val Loss: 2.961
+Layer 7 | Sparse Ratio: 0.7 | Val Loss: 2.954
+Layer 7 | Sparse Ratio: 0.65 | Val Loss: 2.948
+Layer 7 | Sparse Ratio: 0.6 | Val Loss: 2.944
+Layer 7 | Sparse Ratio: 0.55 | Val Loss: 2.942
+Layer 7 | Sparse Ratio: 0.5 | Val Loss: 2.94
+Layer 7 | Sparse Ratio: 0.45 | Val Loss: 2.94
+Layer 7 | Sparse Ratio: 0.4 | Val Loss: 2.939
+Layer 7 | Sparse Ratio: 0.35 | Val Loss: 2.939
+Layer 7 | Sparse Ratio: 0.3 | Val Loss: 2.939
+Layer 7 | Sparse Ratio: 0.25 | Val Loss: 2.939
+Layer 7 best sparse ratio: 0.4 with val loss: 2.939
+Layer 7 final test loss: 2.915
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.8.hook_attn_out
+Before pruning layer 8 - Val loss: 2.938, Test loss: 2.913
+Layer 8 | Sparse Ratio: 0.99 | Val Loss: 2.984
+Layer 8 | Sparse Ratio: 0.95 | Val Loss: 2.98
+Layer 8 | Sparse Ratio: 0.85 | Val Loss: 2.969
+Layer 8 | Sparse Ratio: 0.8 | Val Loss: 2.963
+Layer 8 | Sparse Ratio: 0.75 | Val Loss: 2.959
+Layer 8 | Sparse Ratio: 0.7 | Val Loss: 2.954
+Layer 8 | Sparse Ratio: 0.65 | Val Loss: 2.951
+Layer 8 | Sparse Ratio: 0.6 | Val Loss: 2.948
+Layer 8 | Sparse Ratio: 0.55 | Val Loss: 2.945
+Layer 8 | Sparse Ratio: 0.5 | Val Loss: 2.943
+Layer 8 | Sparse Ratio: 0.45 | Val Loss: 2.942
+Layer 8 | Sparse Ratio: 0.4 | Val Loss: 2.94
+Layer 8 | Sparse Ratio: 0.35 | Val Loss: 2.94
+Layer 8 | Sparse Ratio: 0.3 | Val Loss: 2.939
+Layer 8 | Sparse Ratio: 0.25 | Val Loss: 2.939
+Layer 8 best sparse ratio: 0.3 with val loss: 2.939
+Layer 8 final test loss: 2.915
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.9.hook_attn_out
+Before pruning layer 9 - Val loss: 2.939, Test loss: 2.915
+Layer 9 | Sparse Ratio: 0.99 | Val Loss: 2.987
+Layer 9 | Sparse Ratio: 0.95 | Val Loss: 2.985
+Layer 9 | Sparse Ratio: 0.85 | Val Loss: 2.976
+Layer 9 | Sparse Ratio: 0.8 | Val Loss: 2.971
+Layer 9 | Sparse Ratio: 0.75 | Val Loss: 2.966
+Layer 9 | Sparse Ratio: 0.7 | Val Loss: 2.961
+Layer 9 | Sparse Ratio: 0.65 | Val Loss: 2.956
+Layer 9 | Sparse Ratio: 0.6 | Val Loss: 2.952
+Layer 9 | Sparse Ratio: 0.55 | Val Loss: 2.949
+Layer 9 | Sparse Ratio: 0.5 | Val Loss: 2.946
+Layer 9 | Sparse Ratio: 0.45 | Val Loss: 2.945
+Layer 9 | Sparse Ratio: 0.4 | Val Loss: 2.944
+Layer 9 | Sparse Ratio: 0.35 | Val Loss: 2.942
+Layer 9 | Sparse Ratio: 0.3 | Val Loss: 2.941
+Layer 9 | Sparse Ratio: 0.25 | Val Loss: 2.941
+Layer 9 best sparse ratio: 0.3 with val loss: 2.941
+Layer 9 final test loss: 2.917
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.10.hook_attn_out
+Before pruning layer 10 - Val loss: 2.939, Test loss: 2.915
+Layer 10 | Sparse Ratio: 0.99 | Val Loss: 2.98
+Layer 10 | Sparse Ratio: 0.95 | Val Loss: 2.976
+Layer 10 | Sparse Ratio: 0.85 | Val Loss: 2.969
+Layer 10 | Sparse Ratio: 0.8 | Val Loss: 2.966
+Layer 10 | Sparse Ratio: 0.75 | Val Loss: 2.963
+Layer 10 | Sparse Ratio: 0.7 | Val Loss: 2.961
+Layer 10 | Sparse Ratio: 0.65 | Val Loss: 2.958
+Layer 10 | Sparse Ratio: 0.6 | Val Loss: 2.955
+Layer 10 | Sparse Ratio: 0.55 | Val Loss: 2.952
+Layer 10 | Sparse Ratio: 0.5 | Val Loss: 2.948
+Layer 10 | Sparse Ratio: 0.45 | Val Loss: 2.946
+Layer 10 | Sparse Ratio: 0.4 | Val Loss: 2.943
+Layer 10 | Sparse Ratio: 0.35 | Val Loss: 2.942
+Layer 10 | Sparse Ratio: 0.3 | Val Loss: 2.941
+Layer 10 | Sparse Ratio: 0.25 | Val Loss: 2.94
+Layer 10 best sparse ratio: 0.25 with val loss: 2.94
+Layer 10 final test loss: 2.916
+Loading pretrained SAE: gpt2-small-attn-out-v5-32k/blocks.11.hook_attn_out
+Before pruning layer 11 - Val loss: 2.942, Test loss: 2.918
+Layer 11 | Sparse Ratio: 0.99 | Val Loss: 2.985
+Layer 11 | Sparse Ratio: 0.95 | Val Loss: 2.986
+Layer 11 | Sparse Ratio: 0.85 | Val Loss: 2.982
+Layer 11 | Sparse Ratio: 0.8 | Val Loss: 2.978
+Layer 11 | Sparse Ratio: 0.75 | Val Loss: 2.971
+Layer 11 | Sparse Ratio: 0.7 | Val Loss: 2.972
+Layer 11 | Sparse Ratio: 0.65 | Val Loss: 2.967
+Layer 11 | Sparse Ratio: 0.6 | Val Loss: 2.961
+Layer 11 | Sparse Ratio: 0.55 | Val Loss: 2.956
+Layer 11 | Sparse Ratio: 0.5 | Val Loss: 2.954
+Layer 11 | Sparse Ratio: 0.45 | Val Loss: 2.95
+Layer 11 | Sparse Ratio: 0.4 | Val Loss: 2.951
+Layer 11 | Sparse Ratio: 0.35 | Val Loss: 2.948
+Layer 11 | Sparse Ratio: 0.3 | Val Loss: 2.947
+Layer 11 | Sparse Ratio: 0.25 | Val Loss: 2.945
+Layer 11 best sparse ratio: 0.25 with val loss: 2.945
+Layer 11 final test loss: 2.922

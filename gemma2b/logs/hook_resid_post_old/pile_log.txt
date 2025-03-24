@@ -1,0 +1,160 @@
+Using device: cuda:1
+You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constant Setting center_unembed=False instead.
+You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Model loaded
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_0/width_16k/canonical
+Before pruning layer 0 | Val loss: 2.386 |
+Layer 0 | Sparse Ratio: 0.99 | Val Loss: 11.673
+Layer 0 | Sparse Ratio: 0.95 | Val Loss: 10.576
+Layer 0 | Sparse Ratio: 0.9 | Val Loss: 9.793
+Layer 0 | Sparse Ratio: 0.8 | Val Loss: 8.29
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 7.442
+Layer 0 | Sparse Ratio: 0.7 | Val Loss: 6.742
+Layer 0 | Sparse Ratio: 0.6 | Val Loss: 4.975
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 3.914
+Layer 0 | Sparse Ratio: 0.4 | Val Loss: 3.339
+Layer 0 | Sparse Ratio: 0.3 | Val Loss: 2.801
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 2.606
+Layer 0 best sparse ratio: 0.25 with val loss: 2.606
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_1/width_16k/canonical
+Before pruning layer 1 | Val loss: 2.421 |
+Layer 1 | Sparse Ratio: 0.99 | Val Loss: 11.972
+Layer 1 | Sparse Ratio: 0.95 | Val Loss: 10.643
+Layer 1 | Sparse Ratio: 0.9 | Val Loss: 9.476
+Layer 1 | Sparse Ratio: 0.8 | Val Loss: 7.132
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 6.194
+Layer 1 | Sparse Ratio: 0.7 | Val Loss: 5.2
+Layer 1 | Sparse Ratio: 0.6 | Val Loss: 3.545
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 2.936
+Layer 1 | Sparse Ratio: 0.4 | Val Loss: 2.619
+Layer 1 | Sparse Ratio: 0.3 | Val Loss: 2.488
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 2.458
+Layer 1 best sparse ratio: 0.25 with val loss: 2.458
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_2/width_16k/canonical
+Before pruning layer 2 | Val loss: 2.806 |
+Layer 2 | Sparse Ratio: 0.99 | Val Loss: 11.183
+Layer 2 | Sparse Ratio: 0.95 | Val Loss: 9.734
+Layer 2 | Sparse Ratio: 0.9 | Val Loss: 8.282
+Layer 2 | Sparse Ratio: 0.8 | Val Loss: 6.32
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 5.789
+Layer 2 | Sparse Ratio: 0.7 | Val Loss: 5.511
+Layer 2 | Sparse Ratio: 0.6 | Val Loss: 4.558
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 3.689
+Layer 2 | Sparse Ratio: 0.4 | Val Loss: 3.302
+Layer 2 | Sparse Ratio: 0.3 | Val Loss: 2.862
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 2.83
+Layer 2 best sparse ratio: 0.25 with val loss: 2.83
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_12/width_16k/canonical
+Before pruning layer 12 | Val loss: 2.897 |
+Layer 12 | Sparse Ratio: 0.99 | Val Loss: 13.044
+Layer 12 | Sparse Ratio: 0.95 | Val Loss: 6.514
+Layer 12 | Sparse Ratio: 0.9 | Val Loss: 4.898
+Layer 12 | Sparse Ratio: 0.8 | Val Loss: 3.87
+Layer 12 | Sparse Ratio: 0.75 | Val Loss: 3.595
+Layer 12 | Sparse Ratio: 0.7 | Val Loss: 3.384
+Layer 12 | Sparse Ratio: 0.6 | Val Loss: 3.107
+Layer 12 | Sparse Ratio: 0.5 | Val Loss: 2.992
+Layer 12 | Sparse Ratio: 0.4 | Val Loss: 2.906
+Layer 12 | Sparse Ratio: 0.3 | Val Loss: 2.897
+Layer 12 | Sparse Ratio: 0.25 | Val Loss: 2.904
+Layer 12 best sparse ratio: 0.3 with val loss: 2.897
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_13/width_16k/canonical
+Before pruning layer 13 | Val loss: 2.85 |
+Layer 13 | Sparse Ratio: 0.99 | Val Loss: 9.061
+Layer 13 | Sparse Ratio: 0.95 | Val Loss: 6.325
+Layer 13 | Sparse Ratio: 0.9 | Val Loss: 4.973
+Layer 13 | Sparse Ratio: 0.8 | Val Loss: 3.922
+Layer 13 | Sparse Ratio: 0.75 | Val Loss: 3.556
+Layer 13 | Sparse Ratio: 0.7 | Val Loss: 3.35
+Layer 13 | Sparse Ratio: 0.6 | Val Loss: 3.086
+Layer 13 | Sparse Ratio: 0.5 | Val Loss: 2.949
+Layer 13 | Sparse Ratio: 0.4 | Val Loss: 2.892
+Layer 13 | Sparse Ratio: 0.3 | Val Loss: 2.859
+Layer 13 | Sparse Ratio: 0.25 | Val Loss: 2.848
+Layer 13 best sparse ratio: 0.25 with val loss: 2.848
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_14/width_16k/canonical
+Before pruning layer 14 | Val loss: 2.817 |
+Layer 14 | Sparse Ratio: 0.99 | Val Loss: 9.323
+Layer 14 | Sparse Ratio: 0.95 | Val Loss: 6.863
+Layer 14 | Sparse Ratio: 0.9 | Val Loss: 5.28
+Layer 14 | Sparse Ratio: 0.8 | Val Loss: 3.989
+Layer 14 | Sparse Ratio: 0.75 | Val Loss: 3.635
+Layer 14 | Sparse Ratio: 0.7 | Val Loss: 3.394
+Layer 14 | Sparse Ratio: 0.6 | Val Loss: 3.059
+Layer 14 | Sparse Ratio: 0.5 | Val Loss: 2.902
+Layer 14 | Sparse Ratio: 0.4 | Val Loss: 2.846
+Layer 14 | Sparse Ratio: 0.3 | Val Loss: 2.833
+Layer 14 | Sparse Ratio: 0.25 | Val Loss: 2.813
+Layer 14 best sparse ratio: 0.25 with val loss: 2.813
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_23/width_16k/canonical
+Before pruning layer 23 | Val loss: 2.612 |
+Layer 23 | Sparse Ratio: 0.99 | Val Loss: 9.316
+Layer 23 | Sparse Ratio: 0.95 | Val Loss: 8.034
+Layer 23 | Sparse Ratio: 0.9 | Val Loss: 6.882
+Layer 23 | Sparse Ratio: 0.8 | Val Loss: 4.816
+Layer 23 | Sparse Ratio: 0.75 | Val Loss: 4.095
+Layer 23 | Sparse Ratio: 0.7 | Val Loss: 3.606
+Layer 23 | Sparse Ratio: 0.6 | Val Loss: 3.061
+Layer 23 | Sparse Ratio: 0.5 | Val Loss: 2.812
+Layer 23 | Sparse Ratio: 0.4 | Val Loss: 2.68
+Layer 23 | Sparse Ratio: 0.3 | Val Loss: 2.639
+Layer 23 | Sparse Ratio: 0.25 | Val Loss: 2.626
+Layer 23 best sparse ratio: 0.25 with val loss: 2.626
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_24/width_16k/canonical
+Before pruning layer 24 | Val loss: 2.635 |
+Layer 24 | Sparse Ratio: 0.99 | Val Loss: 8.647
+Layer 24 | Sparse Ratio: 0.95 | Val Loss: 7.445
+Layer 24 | Sparse Ratio: 0.9 | Val Loss: 6.517
+Layer 24 | Sparse Ratio: 0.8 | Val Loss: 4.885
+Layer 24 | Sparse Ratio: 0.75 | Val Loss: 4.217
+Layer 24 | Sparse Ratio: 0.7 | Val Loss: 3.718
+Layer 24 | Sparse Ratio: 0.6 | Val Loss: 3.137
+Layer 24 | Sparse Ratio: 0.5 | Val Loss: 2.833
+Layer 24 | Sparse Ratio: 0.4 | Val Loss: 2.717
+Layer 24 | Sparse Ratio: 0.3 | Val Loss: 2.66
+Layer 24 | Sparse Ratio: 0.25 | Val Loss: 2.65
+Layer 24 best sparse ratio: 0.25 with val loss: 2.65
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_25/width_16k/canonical
+Before pruning layer 25 | Val loss: 2.629 |
+Layer 25 | Sparse Ratio: 0.99 | Val Loss: 12.772
+Layer 25 | Sparse Ratio: 0.95 | Val Loss: 10.053
+Layer 25 | Sparse Ratio: 0.9 | Val Loss: 8.361
+Layer 25 | Sparse Ratio: 0.8 | Val Loss: 5.964
+Layer 25 | Sparse Ratio: 0.75 | Val Loss: 5.031
+Layer 25 | Sparse Ratio: 0.7 | Val Loss: 4.233
+Layer 25 | Sparse Ratio: 0.6 | Val Loss: 3.387
+Layer 25 | Sparse Ratio: 0.5 | Val Loss: 2.971
+Layer 25 | Sparse Ratio: 0.4 | Val Loss: 2.757
+Layer 25 | Sparse Ratio: 0.3 | Val Loss: 2.684
+Layer 25 | Sparse Ratio: 0.25 | Val Loss: 2.654
+Layer 25 best sparse ratio: 0.25 with val loss: 2.654
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_3/width_16k/canonical
+Before pruning layer 3 | Val loss: 3.1 |
+Layer 3 | Sparse Ratio: 0.99 | Val Loss: 10.71
+Layer 3 | Sparse Ratio: 0.95 | Val Loss: 8.769
+Layer 3 | Sparse Ratio: 0.9 | Val Loss: 7.612
+Layer 3 | Sparse Ratio: 0.8 | Val Loss: 5.76
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 5.3
+Layer 3 | Sparse Ratio: 0.7 | Val Loss: 4.916
+Layer 3 | Sparse Ratio: 0.6 | Val Loss: 4.258
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 3.764
+Layer 3 | Sparse Ratio: 0.4 | Val Loss: 3.333
+Layer 3 | Sparse Ratio: 0.3 | Val Loss: 3.182
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 3.144
+Layer 3 best sparse ratio: 0.25 with val loss: 3.144
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_4/width_16k/canonical
+Before pruning layer 4 | Val loss: 3.916 |
+Layer 4 | Sparse Ratio: 0.99 | Val Loss: 11.08
+Layer 4 | Sparse Ratio: 0.95 | Val Loss: 9.364
+Layer 4 | Sparse Ratio: 0.9 | Val Loss: 8.034
+Layer 4 | Sparse Ratio: 0.8 | Val Loss: 7.269
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 6.826
+Layer 4 | Sparse Ratio: 0.7 | Val Loss: 6.458
+Layer 4 | Sparse Ratio: 0.6 | Val Loss: 5.708
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 4.753
+Layer 4 | Sparse Ratio: 0.4 | Val Loss: 4.255
+Layer 4 | Sparse Ratio: 0.3 | Val Loss: 4.0
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 3.967
+Layer 4 best sparse ratio: 0.25 with val loss: 3.967
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_5/width_16k/canonical
+Before pruning layer 5 | Val loss: 3.454 |

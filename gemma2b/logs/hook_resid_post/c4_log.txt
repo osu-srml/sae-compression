@@ -1,0 +1,109 @@
+Using device: cuda:3
+You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constant Setting center_unembed=False instead.
+You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Model loaded
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_0/width_16k/canonical
+Before pruning layer 0 | Val loss: 5.31 |
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 11.185
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 7.073
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 5.718
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_1/width_16k/canonical
+Before pruning layer 1 | Val loss: 5.247 |
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 10.17
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 5.941
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 5.322
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_2/width_16k/canonical
+Before pruning layer 2 | Val loss: 5.582 |
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 9.215
+README.md already exists in the repo, skipping upload
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 6.401
+README.md already exists in the repo, skipping upload
+Using device: cuda:3
+You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constant Setting center_unembed=False instead.
+You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Model loaded
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_0/width_16k/canonical
+Before pruning layer 0 | Val loss: 5.457 |
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 11.463
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 7.371
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 5.969
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_1/width_16k/canonical
+Before pruning layer 1 | Val loss: 5.385 |
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 10.324
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 5.943
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 5.44
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_2/width_16k/canonical
+Before pruning layer 2 | Val loss: 5.817 |
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 9.146
+README.md already exists in the repo, skipping upload
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 6.763
+README.md already exists in the repo, skipping upload
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 5.876
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_3/width_16k/canonical
+Before pruning layer 3 | Val loss: 6.118 |
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 8.44
+README.md already exists in the repo, skipping upload
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 6.629
+README.md already exists in the repo, skipping upload
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 6.126
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_4/width_16k/canonical
+Before pruning layer 4 | Val loss: 7.179 |
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 9.762
+README.md already exists in the repo, skipping upload
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 7.782
+README.md already exists in the repo, skipping upload
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 7.256
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_5/width_16k/canonical
+Before pruning layer 5 | Val loss: 6.332 |
+Layer 5 | Sparse Ratio: 0.75 | Val Loss: 11.011
+README.md already exists in the repo, skipping upload
+Layer 5 | Sparse Ratio: 0.5 | Val Loss: 7.39
+README.md already exists in the repo, skipping upload
+Layer 5 | Sparse Ratio: 0.25 | Val Loss: 6.413
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_6/width_16k/canonical
+Before pruning layer 6 | Val loss: 6.281 |
+Layer 6 | Sparse Ratio: 0.75 | Val Loss: 13.416
+README.md already exists in the repo, skipping upload
+Layer 6 | Sparse Ratio: 0.5 | Val Loss: 7.62
+README.md already exists in the repo, skipping upload
+Layer 6 | Sparse Ratio: 0.25 | Val Loss: 6.414
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_7/width_16k/canonical
+Before pruning layer 7 | Val loss: 5.927 |
+Layer 7 | Sparse Ratio: 0.75 | Val Loss: 8.404
+README.md already exists in the repo, skipping upload
+Layer 7 | Sparse Ratio: 0.5 | Val Loss: 6.384
+README.md already exists in the repo, skipping upload
+Layer 7 | Sparse Ratio: 0.25 | Val Loss: 5.962
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_8/width_16k/canonical
+Before pruning layer 8 | Val loss: 5.903 |
+Layer 8 | Sparse Ratio: 0.75 | Val Loss: 8.562
+README.md already exists in the repo, skipping upload
+Layer 8 | Sparse Ratio: 0.5 | Val Loss: 6.234
+README.md already exists in the repo, skipping upload
+Layer 8 | Sparse Ratio: 0.25 | Val Loss: 5.927
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_9/width_16k/canonical
+Before pruning layer 9 | Val loss: 5.81 |
+Layer 9 | Sparse Ratio: 0.75 | Val Loss: 7.23
+README.md already exists in the repo, skipping upload
+Layer 9 | Sparse Ratio: 0.5 | Val Loss: 6.084
+README.md already exists in the repo, skipping upload
+Layer 9 | Sparse Ratio: 0.25 | Val Loss: 5.834

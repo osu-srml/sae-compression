@@ -1,0 +1,66 @@
+Using device: cuda:1
+You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constant Setting center_unembed=False instead.
+You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Model loaded
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_0/width_16k/canonical
+Before pruning layer 0 | Val loss: 2.392 |
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 7.965
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 4.527
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 2.87
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_1/width_16k/canonical
+Before pruning layer 1 | Val loss: 2.447 |
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 6.898
+Using device: cuda:1
+You tried to specify center_unembed=True for a model using logit softcap, but this can't be done! Softcapping is not invariant upon adding a constant Setting center_unembed=False instead.
+You are not using LayerNorm, so the writing weights can't be centered! Skipping
+Model loaded
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_0/width_16k/canonical
+Before pruning layer 0 | Val loss: 2.437 |
+Layer 0 | Sparse Ratio: 0.75 | Val Loss: 8.035
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.5 | Val Loss: 4.338
+README.md already exists in the repo, skipping upload
+Layer 0 | Sparse Ratio: 0.25 | Val Loss: 2.786
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_1/width_16k/canonical
+Before pruning layer 1 | Val loss: 2.493 |
+Layer 1 | Sparse Ratio: 0.75 | Val Loss: 6.958
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.5 | Val Loss: 3.178
+README.md already exists in the repo, skipping upload
+Layer 1 | Sparse Ratio: 0.25 | Val Loss: 2.546
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_2/width_16k/canonical
+Before pruning layer 2 | Val loss: 2.874 |
+Layer 2 | Sparse Ratio: 0.75 | Val Loss: 5.763
+README.md already exists in the repo, skipping upload
+Layer 2 | Sparse Ratio: 0.5 | Val Loss: 3.468
+README.md already exists in the repo, skipping upload
+Layer 2 | Sparse Ratio: 0.25 | Val Loss: 2.879
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_3/width_16k/canonical
+Before pruning layer 3 | Val loss: 2.952 |
+Layer 3 | Sparse Ratio: 0.75 | Val Loss: 5.165
+README.md already exists in the repo, skipping upload
+Layer 3 | Sparse Ratio: 0.5 | Val Loss: 3.437
+README.md already exists in the repo, skipping upload
+Layer 3 | Sparse Ratio: 0.25 | Val Loss: 3.001
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_4/width_16k/canonical
+Before pruning layer 4 | Val loss: 3.766 |
+Layer 4 | Sparse Ratio: 0.75 | Val Loss: 6.265
+README.md already exists in the repo, skipping upload
+Layer 4 | Sparse Ratio: 0.5 | Val Loss: 4.728
+README.md already exists in the repo, skipping upload
+Layer 4 | Sparse Ratio: 0.25 | Val Loss: 3.832
+README.md already exists in the repo, skipping upload
+Loading pretrained SAE: gemma-scope-2b-pt-res-canonical/layer_5/width_16k/canonical
+Before pruning layer 5 | Val loss: 3.098 |
+Layer 5 | Sparse Ratio: 0.75 | Val Loss: 5.596
+README.md already exists in the repo, skipping upload
+Layer 5 | Sparse Ratio: 0.5 | Val Loss: 3.93
+README.md already exists in the repo, skipping upload
+Layer 5 | Sparse Ratio: 0.25 | Val Loss: 3.135
