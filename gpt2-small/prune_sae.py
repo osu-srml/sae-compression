@@ -91,7 +91,7 @@ class DataClass(t.utils.data.Dataset):
 
     def __getitem__(self, idx):
         text = self.dataset[idx.item()]['text']
-        tokens = self.model.to_tokens(text)[:self.max_length]
+        tokens = self.model.to_tokens(text)[:, :self.max_length]
         return tokens
 
 
@@ -106,11 +106,12 @@ if __name__ == "__main__":
     # Configs
     dataset_name, device = args.dataset, f'cuda:{args.device}'
     model_name = 'gpt2-small'
-    hook_ids = ["hook_resid_post", "hook_mlp_out", "hook_z"] 
+    # hook_ids = ["hook_resid_post", "hook_mlp_out", "attn.hook_z"] 
+    hook_ids = ["hook_mlp_out"] 
     release = {
         "hook_resid_post": "gpt2-small-resid-post-v5-32k", 
         "hook_mlp_out": "gpt2-small-mlp-out-v5-32k", 
-        "hook_z": "gpt2-small-hook-z-kk"
+        "attn.hook_z": "gpt2-small-hook-z-kk"
     }
 
     for hook_id in hook_ids:
@@ -172,7 +173,7 @@ if __name__ == "__main__":
             best_X_dec = None
             best_val_loss = float("inf")
             # sparse_ratios = np.array([0.99, 0.95, 0.85, 0.80, 0.75, 0.70, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40, 0.35, 0.30, 0.25])
-            sparse_ratios = np.array([0.5, 0.25])
+            sparse_ratios = np.array([0.75, 0.25])
 
             for ratio in sparse_ratios:
                 sae = update_sae_weights_with_wanda(sae, original_W_enc, original_W_dec, X_enc, X_dec, ratio)
