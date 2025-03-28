@@ -1,0 +1,37 @@
+\begin{table}
+\caption{resid output - core}
+\label{tab:resid_core}
+\begin{tabular}{llllll}
+\toprule
+metric & pretrained & pruned25 & prunedBest & pruned50 & trained \\
+\midrule
+metric & core & core & core & core & core \\
+kl_div_score & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_ablation & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_sae & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+ce_loss_score & 0.999 & 0.969 & 0.953 & 0.237 & 0.995 \\
+ce_loss_with_ablation & 7.902 & 7.926 & 7.902 & 7.926 & 7.902 \\
+ce_loss_with_sae & 3.848 & 3.703 & 4.035 & 6.895 & 3.855 \\
+ce_loss_without_sae & 3.844 & 3.568 & 3.844 & 3.568 & 3.836 \\
+explained_variance & 0.964 & 0.928 & 0.910 & 0.848 & 0.983 \\
+explained_variance_legacy & 0.898 & 0.877 & 0.823 & 0.732 & 0.957 \\
+mse & 0.048 & 0.100 & 0.119 & 0.211 & 0.022 \\
+cossim & 0.982 & 0.977 & 0.968 & 0.949 & 0.992 \\
+l2_norm_in & 51.562 & 52.688 & 51.562 & 52.688 & 51.406 \\
+l2_norm_out & 51.000 & 52.000 & 50.188 & 51.469 & 50.281 \\
+l2_ratio & 0.989 & 0.989 & 0.975 & 0.978 & 0.979 \\
+relative_reconstruction_bias & 1.007 & 1.021 & 1.016 & 1.058 & 0.986 \\
+l0 & 32.000 & 32.000 & 32.000 & 32.000 & 62.130 \\
+l1 & 55.219 & 63.031 & 59.312 & 62.000 & 39.969 \\
+total_tokens_eval_reconstruction & 409600 & 409600 & 409600 & 409600 & 409600 \\
+total_tokens_eval_sparsity_variance & 4096000 & 4096000 & 4096000 & 4096000 & 4096000 \\
+freq_over_1_percent & 0.014 & 0.013 & 0.012 & 0.011 & 0.024 \\
+freq_over_10_percent & 0.001 & 0.002 & 0.002 & 0.001 & 0.003 \\
+normalized_freq_over_1_percent & 0.645 & 0.703 & 0.705 & 0.611 & 0.639 \\
+normalized_freq_over_10_percent & 0.324 & 0.397 & 0.406 & 0.328 & 0.347 \\
+average_max_encoder_cosine_sim & 0.346 & -1.000 & -1.000 & -1.000 & 0.579 \\
+average_max_decoder_cosine_sim & 0.311 & 0.309 & 0.309 & 0.299 & 0.315 \\
+frac_alive & 0.996 & 0.994 & 0.994 & 0.982 & 0.331 \\
+\bottomrule
+\end{tabular}
+\end{table}

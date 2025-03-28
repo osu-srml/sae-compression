@@ -1,0 +1,37 @@
+\begin{table}
+\caption{mlp output - core}
+\label{tab:mlp_core}
+\begin{tabular}{llllll}
+\toprule
+metric & pruned50 & prunedBest & trained & pretrained & pruned25 \\
+\midrule
+metric & core & core & core & core & core \\
+kl_div_score & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_ablation & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_sae & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+ce_loss_score & 0.671 & 0.676 & 0.841 & 0.735 & 0.800 \\
+ce_loss_with_ablation & 3.734 & 3.977 & 3.971 & 3.977 & 3.734 \\
+ce_loss_with_sae & 3.623 & 3.887 & 3.857 & 3.879 & 3.602 \\
+ce_loss_without_sae & 3.568 & 3.844 & 3.836 & 3.844 & 3.568 \\
+explained_variance & NaN & NaN & NaN & NaN & NaN \\
+explained_variance_legacy & 0.750 & 0.799 & -inf & 0.822 & 0.809 \\
+mse & 0.745 & 0.471 & inf & 0.355 & 0.547 \\
+cossim & 0.885 & 0.906 & 0.955 & 0.918 & 0.913 \\
+l2_norm_in & 94.812 & 84.625 & 83.438 & 84.625 & 94.812 \\
+l2_norm_out & 87.125 & 79.125 & 76.000 & 79.500 & 88.688 \\
+l2_ratio & 0.887 & 0.910 & 0.880 & 0.920 & 0.912 \\
+relative_reconstruction_bias & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+l0 & 32.000 & 32.000 & 555.807 & 32.000 & 32.000 \\
+l1 & 72.188 & 74.562 & 283.500 & 75.062 & 74.312 \\
+total_tokens_eval_reconstruction & 409600 & 409600 & 409600 & 409600 & 409600 \\
+total_tokens_eval_sparsity_variance & 4096000 & 4096000 & 4096000 & 4096000 & 4096000 \\
+freq_over_1_percent & 0.008 & 0.009 & 0.353 & 0.008 & 0.009 \\
+freq_over_10_percent & 0.000 & 0.000 & 0.045 & 0.000 & 0.000 \\
+normalized_freq_over_1_percent & 0.311 & 0.323 & 0.984 & 0.285 & 0.323 \\
+normalized_freq_over_10_percent & 0.144 & 0.130 & 0.261 & 0.131 & 0.143 \\
+average_max_encoder_cosine_sim & -1.000 & 0.560 & 0.649 & 0.568 & 0.560 \\
+average_max_decoder_cosine_sim & 0.254 & 0.264 & 0.269 & 0.266 & 0.264 \\
+frac_alive & 0.941 & 0.999 & 0.942 & 1.000 & 0.999 \\
+\bottomrule
+\end{tabular}
+\end{table}

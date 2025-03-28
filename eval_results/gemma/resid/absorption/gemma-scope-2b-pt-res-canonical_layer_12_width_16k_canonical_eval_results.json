@@ -1,0 +1,269 @@
+{
+  "eval_type_id": "absorption_first_letter",
+  "eval_config": {
+    "model_name": "gemma-2-2b",
+    "random_seed": 42,
+    "f1_jump_threshold": 0.03,
+    "max_k_value": 10,
+    "prompt_template": "{word} has the first letter:",
+    "prompt_token_pos": -6,
+    "llm_batch_size": 32,
+    "llm_dtype": "bfloat16",
+    "k_sparse_probe_l1_decay": 0.01,
+    "k_sparse_probe_batch_size": 4096,
+    "k_sparse_probe_num_epochs": 50
+  },
+  "eval_id": "01231f86-653a-48e2-adb5-f71a7437d8a0",
+  "datetime_epoch_millis": 1742801434479,
+  "eval_result_metrics": {
+    "mean": {
+      "mean_absorption_fraction_score": 0.10579205702431212,
+      "mean_full_absorption_score": 0.10241630964322634,
+      "mean_num_split_features": 1.1538461538461537,
+      "std_dev_absorption_fraction_score": 0.10330644679818925,
+      "std_dev_full_absorption_score": 0.1018274838607139,
+      "std_dev_num_split_features": 0.36794648440311994
+    }
+  },
+  "eval_result_details": [
+    {
+      "first_letter": "a",
+      "mean_absorption_fraction": 0.05353088423304805,
+      "full_absorption_rate": 0.024624855713736054,
+      "num_full_absorption": 64,
+      "num_probe_true_positives": 2599,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "b",
+      "mean_absorption_fraction": 0.013126251918490843,
+      "full_absorption_rate": 0.007787151200519144,
+      "num_full_absorption": 12,
+      "num_probe_true_positives": 1541,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "c",
+      "mean_absorption_fraction": 0.23167656908112857,
+      "full_absorption_rate": 0.29315845444877703,
+      "num_full_absorption": 827,
+      "num_probe_true_positives": 2821,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "d",
+      "mean_absorption_fraction": 0.20711216908640812,
+      "full_absorption_rate": 0.17594254937163376,
+      "num_full_absorption": 294,
+      "num_probe_true_positives": 1671,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "e",
+      "mean_absorption_fraction": 0.12912623562056857,
+      "full_absorption_rate": 0.16346153846153846,
+      "num_full_absorption": 255,
+      "num_probe_true_positives": 1560,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "f",
+      "mean_absorption_fraction": 0.08576386713187248,
+      "full_absorption_rate": 0.06181202370872142,
+      "num_full_absorption": 73,
+      "num_probe_true_positives": 1181,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "g",
+      "mean_absorption_fraction": 0.08816926858994091,
+      "full_absorption_rate": 0.09881756756756757,
+      "num_full_absorption": 117,
+      "num_probe_true_positives": 1184,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "h",
+      "mean_absorption_fraction": 0.03806608214774529,
+      "full_absorption_rate": 0.029866117404737384,
+      "num_full_absorption": 29,
+      "num_probe_true_positives": 971,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "i",
+      "mean_absorption_fraction": 0.24342540591708947,
+      "full_absorption_rate": 0.26578472639807577,
+      "num_full_absorption": 442,
+      "num_probe_true_positives": 1663,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "j",
+      "mean_absorption_fraction": 0.0003087938838076382,
+      "full_absorption_rate": 0.0022675736961451248,
+      "num_full_absorption": 1,
+      "num_probe_true_positives": 441,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "k",
+      "mean_absorption_fraction": 0.0014656910682125967,
+      "full_absorption_rate": 0.0027472527472527475,
+      "num_full_absorption": 2,
+      "num_probe_true_positives": 728,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "l",
+      "mean_absorption_fraction": 0.09693568453759019,
+      "full_absorption_rate": 0.08449477351916376,
+      "num_full_absorption": 97,
+      "num_probe_true_positives": 1148,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "m",
+      "mean_absorption_fraction": 0.007344680274963224,
+      "full_absorption_rate": 0.01335559265442404,
+      "num_full_absorption": 24,
+      "num_probe_true_positives": 1797,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "n",
+      "mean_absorption_fraction": 0.04364265396859344,
+      "full_absorption_rate": 0.03682393555811277,
+      "num_full_absorption": 32,
+      "num_probe_true_positives": 869,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "o",
+      "mean_absorption_fraction": 0.1185647194188194,
+      "full_absorption_rate": 0.09692898272552783,
+      "num_full_absorption": 101,
+      "num_probe_true_positives": 1042,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "p",
+      "mean_absorption_fraction": 0.3126162245187705,
+      "full_absorption_rate": 0.23953695458593055,
+      "num_full_absorption": 538,
+      "num_probe_true_positives": 2246,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "q",
+      "mean_absorption_fraction": 0.0188584823735128,
+      "full_absorption_rate": 0.027472527472527472,
+      "num_full_absorption": 5,
+      "num_probe_true_positives": 182,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "r",
+      "mean_absorption_fraction": 0.25431005767222686,
+      "full_absorption_rate": 0.1751207729468599,
+      "num_full_absorption": 290,
+      "num_probe_true_positives": 1656,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "s",
+      "mean_absorption_fraction": 0.3134704354129398,
+      "full_absorption_rate": 0.2860125260960334,
+      "num_full_absorption": 822,
+      "num_probe_true_positives": 2874,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "t",
+      "mean_absorption_fraction": 0.10082278926874264,
+      "full_absorption_rate": 0.07696862048549438,
+      "num_full_absorption": 130,
+      "num_probe_true_positives": 1689,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "u",
+      "mean_absorption_fraction": 0.2511478848564872,
+      "full_absorption_rate": 0.3166023166023166,
+      "num_full_absorption": 246,
+      "num_probe_true_positives": 777,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "v",
+      "mean_absorption_fraction": 0.014184119074851781,
+      "full_absorption_rate": 0.020671834625323,
+      "num_full_absorption": 16,
+      "num_probe_true_positives": 774,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "w",
+      "mean_absorption_fraction": 0.06335483063972693,
+      "full_absorption_rate": 0.049635036496350364,
+      "num_full_absorption": 34,
+      "num_probe_true_positives": 685,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "x",
+      "mean_absorption_fraction": 0.02612732623197812,
+      "full_absorption_rate": 0.03529411764705882,
+      "num_full_absorption": 3,
+      "num_probe_true_positives": 85,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "y",
+      "mean_absorption_fraction": 0.032958070771864176,
+      "full_absorption_rate": 0.05521472392638037,
+      "num_full_absorption": 9,
+      "num_probe_true_positives": 163,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "z",
+      "mean_absorption_fraction": 0.004484304932735426,
+      "full_absorption_rate": 0.02242152466367713,
+      "num_full_absorption": 5,
+      "num_probe_true_positives": 223,
+      "num_split_features": 1
+    }
+  ],
+  "sae_bench_commit_hash": "c5c90a136c8db8e704e401328a49b19932ad56c9",
+  "sae_lens_id": "layer_12/width_16k/canonical",
+  "sae_lens_release_id": "gemma-scope-2b-pt-res-canonical",
+  "sae_lens_version": "5.5.2",
+  "sae_cfg_dict": {
+    "architecture": "jumprelu",
+    "d_in": 2304,
+    "d_sae": 16384,
+    "activation_fn_str": "relu",
+    "apply_b_dec_to_input": false,
+    "finetuning_scaling_factor": false,
+    "context_size": 1024,
+    "model_name": "gemma-2-2b",
+    "hook_name": "blocks.12.hook_resid_post",
+    "hook_layer": 12,
+    "hook_head_index": null,
+    "prepend_bos": true,
+    "dataset_path": "monology/pile-uncopyrighted",
+    "dataset_trust_remote_code": true,
+    "normalize_activations": null,
+    "dtype": "torch.bfloat16",
+    "device": "cuda",
+    "sae_lens_training_version": null,
+    "activation_fn_kwargs": {},
+    "neuronpedia_id": "gemma-2-2b/12-gemmascope-res-16k",
+    "model_from_pretrained_kwargs": {},
+    "seqpos_slice": [
+      null
+    ]
+  },
+  "eval_result_unstructured": null
+}

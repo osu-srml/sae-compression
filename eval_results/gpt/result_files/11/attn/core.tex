@@ -1,0 +1,37 @@
+\begin{table}
+\caption{attn output - core}
+\label{tab:attn_core}
+\begin{tabular}{llllll}
+\toprule
+metric & pruned25 & pruned50 & prunedBest & pretrained & trained \\
+\midrule
+metric & core & core & core & core & core \\
+kl_div_score & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_ablation & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+kl_div_with_sae & -1.000 & -1.000 & -1.000 & -1.000 & -1.000 \\
+ce_loss_score & 0.694 & 0.681 & 0.746 & 0.952 & 1.048 \\
+ce_loss_with_ablation & 3.709 & 3.709 & 3.959 & 3.959 & 3.959 \\
+ce_loss_with_sae & 3.611 & 3.613 & 3.867 & 3.842 & 3.830 \\
+ce_loss_without_sae & 3.568 & 3.568 & 3.836 & 3.836 & 3.836 \\
+explained_variance & 0.652 & 0.587 & 0.628 & 0.741 & 0.780 \\
+explained_variance_legacy & -0.049 & -0.126 & -0.405 & -0.093 & 0.056 \\
+mse & 0.039 & 0.047 & 0.036 & 0.025 & 0.021 \\
+cossim & 0.826 & 0.801 & 0.812 & 0.864 & 0.884 \\
+l2_norm_in & 14.727 & 14.727 & 13.750 & 13.750 & 13.750 \\
+l2_norm_out & 11.523 & 11.234 & 11.211 & 11.500 & 11.711 \\
+l2_ratio & 0.811 & 0.798 & 0.843 & 0.848 & 0.857 \\
+relative_reconstruction_bias & 0.955 & 0.971 & 1.014 & 0.965 & 0.962 \\
+l0 & 1.900 & 1.438 & 0.561 & 5.812 & 38.534 \\
+l1 & 1.524 & 0.992 & 0.404 & 3.436 & 7.176 \\
+total_tokens_eval_reconstruction & 409600 & 409600 & 409600 & 409600 & 409600 \\
+total_tokens_eval_sparsity_variance & 4096000 & 4096000 & 4096000 & 4096000 & 4096000 \\
+freq_over_1_percent & 0.001 & 0.001 & 0.000 & 0.003 & 0.046 \\
+freq_over_10_percent & 0.000 & 0.000 & 0.000 & 0.000 & 0.005 \\
+normalized_freq_over_1_percent & 0.284 & 0.159 & 0.104 & 0.368 & 0.733 \\
+normalized_freq_over_10_percent & 0.000 & 0.000 & 0.000 & 0.148 & 0.347 \\
+average_max_encoder_cosine_sim & -1.000 & -1.000 & -1.000 & 0.798 & 0.530 \\
+average_max_decoder_cosine_sim & 0.392 & 0.366 & 0.388 & 0.398 & 0.578 \\
+frac_alive & 0.189 & 0.280 & 0.161 & 0.158 & 0.982 \\
+\bottomrule
+\end{tabular}
+\end{table}

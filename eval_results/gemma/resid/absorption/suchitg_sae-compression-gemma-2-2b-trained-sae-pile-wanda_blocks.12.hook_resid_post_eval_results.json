@@ -1,0 +1,271 @@
+{
+  "eval_type_id": "absorption_first_letter",
+  "eval_config": {
+    "model_name": "gemma-2-2b",
+    "random_seed": 42,
+    "f1_jump_threshold": 0.03,
+    "max_k_value": 10,
+    "prompt_template": "{word} has the first letter:",
+    "prompt_token_pos": -6,
+    "llm_batch_size": 32,
+    "llm_dtype": "bfloat16",
+    "k_sparse_probe_l1_decay": 0.01,
+    "k_sparse_probe_batch_size": 4096,
+    "k_sparse_probe_num_epochs": 50
+  },
+  "eval_id": "1960df74-cd23-403c-aae1-0420fec11cd1",
+  "datetime_epoch_millis": 1742857446755,
+  "eval_result_metrics": {
+    "mean": {
+      "mean_absorption_fraction_score": 0.35482524200283716,
+      "mean_full_absorption_score": 0.0009683618731122945,
+      "mean_num_split_features": 2.3846153846153846,
+      "std_dev_absorption_fraction_score": 0.22878597112176813,
+      "std_dev_full_absorption_score": 0.0028526008217957984,
+      "std_dev_num_split_features": 1.1688258408136971
+    }
+  },
+  "eval_result_details": [
+    {
+      "first_letter": "a",
+      "mean_absorption_fraction": 0.24004565126934618,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 2671,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "b",
+      "mean_absorption_fraction": 0.20974327144976224,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1596,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "c",
+      "mean_absorption_fraction": 0.9626551538081027,
+      "full_absorption_rate": 0.009259259259259259,
+      "num_full_absorption": 26,
+      "num_probe_true_positives": 2808,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "d",
+      "mean_absorption_fraction": 0.34623098726008916,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1654,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "e",
+      "mean_absorption_fraction": 0.27605418199552373,
+      "full_absorption_rate": 0.0019144862795149968,
+      "num_full_absorption": 3,
+      "num_probe_true_positives": 1567,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "f",
+      "mean_absorption_fraction": 0.39934496269832,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1255,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "g",
+      "mean_absorption_fraction": 0.3423889548706036,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1101,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "h",
+      "mean_absorption_fraction": 0.298146268939394,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1010,
+      "num_split_features": 2
+    },
+    {
+      "first_letter": "i",
+      "mean_absorption_fraction": 0.20321987133106176,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1679,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "j",
+      "mean_absorption_fraction": 0.464283608643775,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 445,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "k",
+      "mean_absorption_fraction": 0.3204525822365509,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 665,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "l",
+      "mean_absorption_fraction": 0.43247854144202846,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1163,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "m",
+      "mean_absorption_fraction": 0.5966146438895655,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1798,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "n",
+      "mean_absorption_fraction": 0.05370152499522241,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 785,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "o",
+      "mean_absorption_fraction": 0.14624519515922774,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1057,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "p",
+      "mean_absorption_fraction": 0.09033628503122101,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 2330,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "q",
+      "mean_absorption_fraction": 0.8165464905955471,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 180,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "r",
+      "mean_absorption_fraction": 0.020404591030259423,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1622,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "s",
+      "mean_absorption_fraction": 0.2882353087038435,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 2801,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "t",
+      "mean_absorption_fraction": 0.49342613270638086,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 1617,
+      "num_split_features": 4
+    },
+    {
+      "first_letter": "u",
+      "mean_absorption_fraction": 0.20929989534197377,
+      "full_absorption_rate": 0.002509410288582183,
+      "num_full_absorption": 2,
+      "num_probe_true_positives": 797,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "v",
+      "mean_absorption_fraction": 0.09144064506092656,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 831,
+      "num_split_features": 3
+    },
+    {
+      "first_letter": "w",
+      "mean_absorption_fraction": 0.4275963467173189,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 675,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "x",
+      "mean_absorption_fraction": 0.6659408969083505,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 121,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "y",
+      "mean_absorption_fraction": 0.5565029410089168,
+      "full_absorption_rate": 0.011494252873563218,
+      "num_full_absorption": 2,
+      "num_probe_true_positives": 174,
+      "num_split_features": 1
+    },
+    {
+      "first_letter": "z",
+      "mean_absorption_fraction": 0.27412135898045487,
+      "full_absorption_rate": 0.0,
+      "num_full_absorption": 0,
+      "num_probe_true_positives": 265,
+      "num_split_features": 2
+    }
+  ],
+  "sae_bench_commit_hash": "c5c90a136c8db8e704e401328a49b19932ad56c9",
+  "sae_lens_id": "blocks.12.hook_resid_post",
+  "sae_lens_release_id": "suchitg/sae-compression-gemma-2-2b-trained-sae-pile-wanda",
+  "sae_lens_version": "5.6.1",
+  "sae_cfg_dict": {
+    "architecture": "jumprelu",
+    "d_in": 2304,
+    "d_sae": 16384,
+    "activation_fn_str": "relu",
+    "apply_b_dec_to_input": false,
+    "finetuning_scaling_factor": false,
+    "context_size": 1024,
+    "model_name": "gemma-2-2b",
+    "hook_name": "blocks.12.hook_resid_post",
+    "hook_layer": 12,
+    "hook_head_index": null,
+    "prepend_bos": true,
+    "dataset_path": "monology/pile-uncopyrighted",
+    "dataset_trust_remote_code": true,
+    "normalize_activations": "none",
+    "dtype": "torch.bfloat16",
+    "device": "cuda",
+    "sae_lens_training_version": "5.5.2",
+    "activation_fn_kwargs": {},
+    "neuronpedia_id": null,
+    "model_from_pretrained_kwargs": {
+      "center_writing_weights": false
+    },
+    "seqpos_slice": [
+      null
+    ]
+  },
+  "eval_result_unstructured": null
+}
